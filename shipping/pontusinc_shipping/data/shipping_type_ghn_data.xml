@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data noupdate="1">
+		<record id="shipping_type_ghn_traditional_delivery" model="shipping.type">
+			<field name="name">Hàng nặng (=>20kg)</field>
+			<field name="code_ghn">5</field>
+			<field name="platform_id" ref="pontusinc_shipping.shipping_platform_ghn" />
+		</record>
+
+		<record id="shipping_type_ghn_e_commerce_delivery" model="shipping.type">
+			<field name="name">Hàng nhẹ</field>
+			<field name="code_ghn">2</field>
+			<field name="platform_id" ref="pontusinc_shipping.shipping_platform_ghn" />
+		</record>
+	</data>
+</odoo>
