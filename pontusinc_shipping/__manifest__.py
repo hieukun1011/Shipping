@@ -2,7 +2,7 @@
 
 {
     'name': 'Shipping Connect',
-    'description': 'Connect delivery partners',
+    'description': 'Connect delivery partners GHN, VNPOST, GHTK, Viettel Post',
     'summary': '',
     'category': '',
     "sequence": 3,
