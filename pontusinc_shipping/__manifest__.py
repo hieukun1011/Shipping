@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-  
 
 {
-    'name': 'Shipping Connect',
+    'name': 'Shipping Connector',
     'description': 'Connect delivery partners GHN, VNPOST, GHTK, Viettel Post',
     'summary': '',
     'category': '',
