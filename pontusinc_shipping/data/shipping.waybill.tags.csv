@@ -1,0 +1,5 @@
+"id","code","name","platform_id:id"
+cho_thu_hang,CTH,CHOTHUHANG,shipping_platform_ghn
+cho_xem_hang_khong_thu,CXHKT,CHOXEMHANGKHONGTHU,shipping_platform_ghn
+khong_cho_xem_hang,KCXH,KHONGCHOXEMHANG,shipping_platform_ghn
+
