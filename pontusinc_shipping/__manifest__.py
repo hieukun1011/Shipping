@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-  
 
 {
-    'name': 'Pontusinc Shipping v17',
-    'description': 'Pontusinc Shipping',
+    'name': 'Shipping Connect',
+    'description': 'Connect delivery partners',
     'summary': '',
     'category': '',
     "sequence": 3,
     'version': '1.0.0',
-    'author': 'Duong Trung Hieu',
-    'company': 'Pontusinc',
+    'author': 'Hieudt',
+    'company': '',
     'website': "",
     'depends': ['base_unit_vn', 'sale', 'stock', 'delivery'],
     'data': [
