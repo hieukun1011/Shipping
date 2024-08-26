@@ -1,6 +1,6 @@
 {
-    'name': 'OpenEduCat Quiz Management',
-    'version': '13.0',
+    'name': 'Pontusinc Quiz Management',
+    'version': '17.0',
     'category': 'Education',
     "sequence": 3,
     'summary': 'Quiz Management',
@@ -9,7 +9,6 @@
         This module provide feature of Quiz Management.
     """,
     'author': 'Tech Receptives',
-    'website': 'http://www.openeducat.org',
     'depends': [
         'base',
         'portal',
@@ -68,5 +67,4 @@
     'price': 169,
     'currency': 'USD',
     'license': 'OPL-1',
-    'live_test_url': 'https://www.openeducat.org/plans'
 }

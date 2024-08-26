@@ -25,7 +25,7 @@ class OpQuestionBank(models.Model):
     def get_import_templates(self):
         return [{
             'label': _('Import Template for question bank'),
-            'template': '/openeducat_quiz/static/xls/import_op_question_bank.xlsx'
+            'template': '/pontusinc_quiz/static/xls/import_op_question_bank.xlsx'
         }]
 
 
@@ -63,7 +63,7 @@ class OpQuestionLine(models.Model):
     def get_import_templates(self):
         return [{
             'label': _('Import Template for question'),
-            'template': '/openeducat_quiz/static/xls/nhap_cau_hoi.xls'
+            'template': '/pontusinc_quiz/static/xls/nhap_cau_hoi.xls'
         }]
 
 

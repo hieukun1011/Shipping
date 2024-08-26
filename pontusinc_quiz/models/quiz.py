@@ -130,8 +130,8 @@ class OpQuiz(models.Model):
 
     def action_open_quiz_result(self):
         self.ensure_one()
-        tree_id = self.env.ref('openeducat_quiz.view_op_quiz_result_tree').id
-        form_id = self.env.ref('openeducat_quiz.view_op_quiz_result_form').id
+        tree_id = self.env.ref('pontusinc_quiz.view_op_quiz_result_tree').id
+        form_id = self.env.ref('pontusinc_quiz.view_op_quiz_result_form').id
         return {
             'name': _("Quiz result"),
             'type': 'ir.actions.act_window',

@@ -151,7 +151,7 @@ class OpeneducatQuizRender(http.Controller):
                 'finish_date': res.finish_date,
             })
         post['result_data'] = data
-        return http.request.render('openeducat_quiz.my_result', post)
+        return http.request.render('pontusinc_quiz.my_result', post)
 
     @http.route('/exam/result/<int:result_id>', type="http", auth="user",
                 website=True)
@@ -166,7 +166,7 @@ class OpeneducatQuizRender(http.Controller):
                 'given_answer': str(rec.given_answer),
             })
         _logger.info(data)
-        return http.request.render('openeducat_quiz.view_detail_result', {"result_data": data})
+        return http.request.render('pontusinc_quiz.view_detail_result', {"result_data": data})
 
     @http.route('/online-exams', type="http", auth="user", website=True)
     def get_exam_details(self, **post):
@@ -226,7 +226,7 @@ class OpeneducatQuizRender(http.Controller):
                 'slug_exam': slug(exam),
             })
         post['exams_list'] = exams_list
-        return http.request.render('openeducat_quiz.online_exam_page', post)
+        return http.request.render('pontusinc_quiz.online_exam_page', post)
 
     # bấm nút bắt đầu thi đầu tiên
     @http.route('/exam/start/<model("op.quiz"):quiz>',
@@ -240,7 +240,7 @@ class OpeneducatQuizRender(http.Controller):
     def get_result_submit(self, result):
         if not result.quiz_id.show_result:
             return http.request.render(
-                'openeducat_quiz.quiz_completed', {})
+                'pontusinc_quiz.quiz_completed', {})
         return request.redirect('/exam/score/%s' % (result.id))
 
     # bấm nút bắt đầu thi đầu tiên
@@ -252,12 +252,12 @@ class OpeneducatQuizRender(http.Controller):
         if exam.auth_required:
 
             if request.env.user._is_public():
-                return request.render("openeducat_quiz.auth_required", {'quiz': exam, 'result': result})
+                return request.render("pontusinc_quiz.auth_required", {'quiz': exam, 'result': result})
             else:
                 if result.user_id.id != request.env.uid:
                     for rec in result.line_ids:
                         if rec.given_answer:
-                            return http.request.render('openeducat_quiz.quiz_warning_page', post)
+                            return http.request.render('pontusinc_quiz.quiz_warning_page', post)
                         else:
                             if exam.quiz_employee == True:
                                 employee_data = []
@@ -267,7 +267,7 @@ class OpeneducatQuizRender(http.Controller):
                                     exam_link = exam.redirect_exam()
                                     return request.redirect(exam_link)
                                 else:
-                                    return http.request.render('openeducat_quiz.quiz_error_page', post)
+                                    return http.request.render('pontusinc_quiz.quiz_error_page', post)
 
                             elif exam.academy_exam == True:
                                 student_data = []
@@ -277,7 +277,7 @@ class OpeneducatQuizRender(http.Controller):
                                     exam_link = exam.redirect_exam()
                                     return request.redirect(exam_link)
                                 else:
-                                    return http.request.render('openeducat_quiz.quiz_error_page', post)
+                                    return http.request.render('pontusinc_quiz.quiz_error_page', post)
                 else:
                     result.write({
                         'user_id': request.env.user.id
@@ -311,7 +311,7 @@ class OpeneducatQuizRender(http.Controller):
         if not result.quiz_id.single_que:
             single_page = 1
         post.update({'single_page': single_page})
-        return http.request.render('openeducat_quiz.quiz_starting_page', post)
+        return http.request.render('pontusinc_quiz.quiz_starting_page', post)
 
     # Submit the Single page single question form submition
     # mỗi khi bấm tiếp theo trong bảng trả lời câu hỏi
@@ -372,7 +372,7 @@ class OpeneducatQuizRender(http.Controller):
                 line.result_id.state = 'submit'
                 if not line.result_id.quiz_id.show_result:
                     return http.request.render(
-                        'openeducat_quiz.quiz_completed', {})
+                        'pontusinc_quiz.quiz_completed', {})
                 return request.redirect('/exam/score/%s' % (line.result_id.id))
 
     # bấm nút kết thúc sẽ chạy đến hàm này
@@ -384,7 +384,7 @@ class OpeneducatQuizRender(http.Controller):
         result.finish_date = datetime.now()
         data = result.get_answer_data()
         return http.request.render(
-            'openeducat_quiz.quiz_results', data)
+            'pontusinc_quiz.quiz_results', data)
 
     def _compute_youtube_id(self, url):
         youtube_id = False
@@ -422,10 +422,10 @@ class OpeneducatQuizRender(http.Controller):
         # print(result.start_quiz)
 
         if exam.auth_required and request.env.user._is_public():
-            return request.render("openeducat_quiz.auth_required", {'quiz': exam, 'result': result})
+            return request.render("pontusinc_quiz.auth_required", {'quiz': exam, 'result': result})
 
         if result.user_id.id != request.env.uid:
-            return http.request.render('openeducat_quiz.quiz_warning_page', post)
+            return http.request.render('pontusinc_quiz.quiz_warning_page', post)
 
         if spent_time:
             time_val = spent_time.split(':')
@@ -586,7 +586,7 @@ class OpeneducatQuizRender(http.Controller):
         post.update({
             'attachment': attachment,
         })
-        return request.render("openeducat_quiz.quiz_render_form_view", post)
+        return request.render("pontusinc_quiz.quiz_render_form_view", post)
 
     @http.route('/quiz/<model("op.quiz.result"):result>', type='http',
                 auth='user', website=True)
@@ -597,9 +597,9 @@ class OpeneducatQuizRender(http.Controller):
             'total_question': result.total_question
         })
         if not result.quiz_id.single_que:
-            return request.render("openeducat_quiz.quiz_web_page", post)
+            return request.render("pontusinc_quiz.quiz_web_page", post)
         return request.render(
-            "openeducat_quiz.quiz_web_page_single", post)
+            "pontusinc_quiz.quiz_web_page_single", post)
 
     @http.route('/quiz/results', type="http", auth="public", website=True)
     def quiz_result(self, **kwargs):
@@ -612,8 +612,8 @@ class OpeneducatQuizRender(http.Controller):
         quiz = result.quiz_id
         value = self.get_quiz_result_data(values)
         if not quiz.show_result:
-            return http.request.render('openeducat_quiz.quiz_completed', {})
-        return http.request.render('openeducat_quiz.quiz_results', value)
+            return http.request.render('pontusinc_quiz.quiz_completed', {})
+        return http.request.render('pontusinc_quiz.quiz_results', value)
 
     # bấm bắt đầu thi lần t2
     # sau mỗi lần next câu hỏi thì chạy đến đây
