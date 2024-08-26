@@ -8,7 +8,7 @@
     'description': """
         This module provide feature of Quiz Management.
     """,
-    'author': 'Tech Receptives',
+    'author': 'Hieudt',
     'depends': [
         'base',
         'portal',
