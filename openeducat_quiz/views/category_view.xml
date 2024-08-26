@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_op_quiz_category_tree" model="ir.ui.view">
+            <field name="name">op.quiz.category.tree</field>
+            <field name="model">op.quiz.category</field>
+            <field name="type">tree</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <tree string="Quiz Category">
+                    <field name="name"/>
+                    <field name="code"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_op_quiz_category_form" model="ir.ui.view">
+            <field name="name">op.quiz.category.form</field>
+            <field name="model">op.quiz.category</field>
+            <field name="type">form</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="Quiz Category">
+                    <sheet>
+                        <group>
+                            <field name="name" required="1"/>
+                            <field name="code"/>
+                        </group>
+                        <field name="description" placeholder="Description..."/>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_op_quiz_category_search" model="ir.ui.view">
+            <field name="name">op.quiz.category.search</field>
+            <field name="model">op.quiz.category</field>
+            <field name="type">search</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <search string="Quiz Category">
+                    <field name="name" select="True"/>
+                    <field name="code"/>
+                </search>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="act_open_op_quiz_category_view">
+            <field name="name">Quiz Category</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">op.quiz.category</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="view_op_quiz_category_search"/>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="act_open_op_quiz_category_view_form">
+            <field name="act_window_id" ref="act_open_op_quiz_category_view"/>
+            <field name="sequence" eval="20"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_op_quiz_category_form"/>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="act_open_op_quiz_category_view_tree">
+            <field name="act_window_id" ref="act_open_op_quiz_category_view"/>
+            <field name="sequence" eval="10"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_op_quiz_category_tree"/>
+        </record>
+    </data>
+</odoo>

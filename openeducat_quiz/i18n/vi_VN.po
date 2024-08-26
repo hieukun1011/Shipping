@@ -1,0 +1,1347 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* openeducat_quiz
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-18 11:30+0000\n"
+"PO-Revision-Date: 2022-03-18 11:30+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_profile
+msgid ""
+"<b>Total Attempt</b>\n"
+"                    :"
+msgstr ""
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__message_needaction
+msgid "Action Needed"
+msgstr "Hành động cần thiết"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line__question_mark
+msgid "Actual Marks"
+msgstr "Điểm thực tế"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__que_required
+msgid "All Question are Required"
+msgstr "Tất cả các câu hỏi là bắt buộc"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields.selection,name:openeducat_quiz.selection__op_quiz__type__all_employee
+msgid "All employee"
+msgstr "Toàn công ty"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_answer__name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line__answer
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_answer__name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line__answer
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_answers__name
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+msgid "Answer"
+msgstr "Trả lời"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line__line_ids
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line__line_ids
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_line_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Answers"
+msgstr "Câu trả lời"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__message_attachment_count
+msgid "Attachment Count"
+msgstr "Số lượng tập tin đính kèm"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_render_exam_main_form_view
+msgid "Attempt :"
+msgstr "Bài thi :"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.my_result
+msgid "Attempt Date"
+msgstr "Ngày thi"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields.selection,name:openeducat_quiz.selection__op_quiz__time_expire__cancel
+msgid ""
+"Attempts must be submitted before time expires, or they are not counted"
+msgstr ""
+"Các bài thi phải được gửi trước khi hết thời gian, nếu không chúng sẽ không "
+"được tính"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields.selection,name:openeducat_quiz.selection__op_quiz__start_view__audio
+msgid "Audio"
+msgstr "Âm thanh"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__quiz_audio
+msgid "Audio File"
+msgstr "Tập tin âm thanh"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_profile
+msgid "Average Result"
+msgstr "Kết quả trung bình"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_render_exam_main_form_view
+msgid "Avg Result :"
+msgstr "Kết quả Trung bình:"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_error_page
+msgid "Bạn không nằm trong danh sách thí sinh"
+msgstr ""
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_web_page_single_form
+msgid "Bảng câu"
+msgstr ""
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_render_single_form_view
+msgid "Bảng câu hỏi"
+msgstr ""
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_render_exam_main_form_view
+msgid "Bắt đầu thi"
+msgstr ""
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_starting_page
+msgid "Bắt đầu thiaaaaaaa"
+msgstr ""
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_starting_page
+msgid "Bắt đầu thiiiiiiii"
+msgstr ""
+
+#. module: openeducat_quiz
+#: code:addons/openeducat_quiz/models/result.py:0
+#, python-format
+msgid "Can not set more then actual mark."
+msgstr "Không thể đặt thêm thực tế sau đó mark."
+
+#. module: openeducat_quiz
+#: model:ir.model.fields.selection,name:openeducat_quiz.selection__op_quiz__state__cancel
+#: model:ir.model.fields.selection,name:openeducat_quiz.selection__op_quiz_result__state__cancel
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_question_wizard_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_update_mark_wizard_form
+msgid "Cancel"
+msgstr "Hủy"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line__case_sensitive
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line__case_sensitive
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line__case_sensitive
+msgid "Case Sensitive"
+msgstr "Trường hợp nhạy cảm"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__categ_id
+msgid "Category"
+msgstr "Chuyên mục"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__challenge_ids
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Challenges"
+msgstr "Thử thách"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields.selection,name:openeducat_quiz.selection__op_quiz__type__channel_slide
+msgid "Channel slide"
+msgstr "Kỳ thi khoá học"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Closed"
+msgstr "Đã đóng"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_category__code
+msgid "Code"
+msgstr "Mã"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__company_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result__company_id
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_result_search
+msgid "Company"
+msgstr "Công ty"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result__employee_id
+msgid "Company employee"
+msgstr ""
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__config_ids
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__quiz_config
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Configuration"
+msgstr "Cấu hình"
+
+#. module: openeducat_quiz
+#: model:ir.ui.menu,name:openeducat_quiz.op_quiz_config_menu
+msgid "Configuration Quiz"
+msgstr "Câu hỏi về cấu hình"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_question_wizard_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_update_mark_wizard_form
+msgid "Confirm"
+msgstr "Xác nhận"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line__answer
+msgid "Correct Answer"
+msgstr "Câu trả lời đúng"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result__create_on
+msgid "Create On"
+msgstr "Ngày tạo"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_answer_grade__create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank__create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_answer__create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line__create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_type__create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_wizard__create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_answer__create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_category__create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_config__create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line__create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result__create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line__create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_answers__create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_message__create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_update_mark__create_uid
+msgid "Created by"
+msgstr "Được tạo bởi"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_answer_grade__create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank__create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_answer__create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line__create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_type__create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_wizard__create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_answer__create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_category__create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_config__create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line__create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result__create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line__create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_answers__create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_message__create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_update_mark__create_date
+msgid "Created on"
+msgstr "Thời điểm tạo"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_render_single_form_view
+msgid "Câu"
+msgstr ""
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__department_id
+msgid "Department participating"
+msgstr "Phòng ban tham gia"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank__description
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_type__description
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_category__description
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Description"
+msgstr "Mô tả"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_type_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_category_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Description..."
+msgstr "Mô tả..."
+
+#. module: openeducat_quiz
+#: model:ir.model.fields.selection,name:openeducat_quiz.selection__op_question_bank_line__que_type__descriptive
+#: model:ir.model.fields.selection,name:openeducat_quiz.selection__op_quiz_line__que_type__descriptive
+#: model:ir.model.fields.selection,name:openeducat_quiz.selection__op_quiz_result_line__que_type__descriptive
+msgid "Descriptive"
+msgstr "Mô tả"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_answer_grade__display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank__display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_answer__display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line__display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_type__display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_wizard__display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_answer__display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_category__display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_config__display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line__display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result__display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line__display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_answers__display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_message__display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_update_mark__display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__not_attempt_ans
+msgid "Display Not Attempted Answer"
+msgstr "Hiển thị kết quả bị bỏ qua"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__show_result
+msgid "Display Result"
+msgstr "Kết quả hiển thị"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__right_ans
+msgid "Display Right Answer"
+msgstr "Hiển thị đáp án đúng"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__wrong_ans
+msgid "Display Wrong Answer"
+msgstr "Hiển thị đáp án sai"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields.selection,name:openeducat_quiz.selection__op_quiz__state__done
+#: model:ir.model.fields.selection,name:openeducat_quiz.selection__op_quiz_result__state__done
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_result_form
+msgid "Done"
+msgstr "Hoàn thành"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields.selection,name:openeducat_quiz.selection__op_quiz__state__draft
+msgid "Draft"
+msgstr "Nháp"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__end_date
+msgid "End date"
+msgstr "Ngày kết thúc"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.exam_user_result_profile
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.my_result
+msgid "Exam Name"
+msgstr "Tên kỳ thi"
+
+#. module: openeducat_quiz
+#: model:website.menu,name:openeducat_quiz.website_menu_quiz_menu
+msgid "Exams"
+msgstr "Kỳ thi"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Fetch Questions"
+msgstr "Tìm nạp câu hỏi"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields.selection,name:openeducat_quiz.selection__op_question_bank_line__que_type__blank
+#: model:ir.model.fields.selection,name:openeducat_quiz.selection__op_quiz_line__que_type__blank
+#: model:ir.model.fields.selection,name:openeducat_quiz.selection__op_quiz_result_line__que_type__blank
+msgid "Fill in the Blank"
+msgstr "Điền vào chỗ trống"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_last_question
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_web_page
+msgid "Finish"
+msgstr "Hoàn thành"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result__finish_date
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_result_search
+msgid "Finished On"
+msgstr "Thời gian hoàn thành"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__message_follower_ids
+msgid "Followers"
+msgstr "Người theo dõi"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Người theo dõi (Đối tác)"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_update_mark__answer
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+msgid "Given Answer"
+msgstr "Đưa ra câu trả lời"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_render_single_form_view
+msgid "Giây"
+msgstr ""
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_render_single_form_view
+msgid "Giờ"
+msgstr ""
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__grace_period
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Grace Period"
+msgstr "Thời gian gia hạn"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_answer__grade_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_answer__grade_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_answers__grade_id
+msgid "Grade"
+msgstr "Lớp"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_answer_grade__value
+msgid "Grade (%)"
+msgstr "Lớp (%)"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line__grade_true_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line__grade_true_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line__grade_true_id
+msgid "Grade for truly given answer"
+msgstr "Điểm cho câu trả lời đúng"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line__grade_false_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line__grade_false_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line__grade_false_id
+msgid "Grade for wrongly given answer"
+msgstr "Điểm cho câu trả lời sai"
+
+#. module: openeducat_quiz
+#: model:ir.actions.act_window,name:openeducat_quiz.act_open_op_answer_grade_view
+#: model:ir.ui.menu,name:openeducat_quiz.menu_op_answer_grade
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_answer_grade_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_answer_grade_search
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_answer_grade_tree
+msgid "Grades"
+msgstr "Các lớp"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_result_search
+msgid "Group By"
+msgstr "Nhóm theo"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields.selection,name:openeducat_quiz.selection__op_quiz__start_view__html
+msgid "HTML"
+msgstr ""
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__quiz_html
+msgid "HTML Content"
+msgstr "Nội dung HTML"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__has_message
+msgid "Has Message"
+msgstr "Có tin nhắn"
+
+#. module: openeducat_quiz
+#: model:ir.module.category,description:openeducat_quiz.module_category_openeducat_quiz
+msgid "Helps you manage your institutes different-different users."
+msgstr ""
+"Giúp bạn quản lý các thư viện khác nhau giữa những người dùng khác nhau"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__time_limit_hr
+msgid "Hour"
+msgstr "Giờ"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Hr"
+msgstr "Giờ"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_answer_grade__id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank__id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_answer__id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line__id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_type__id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_wizard__id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_answer__id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_category__id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_config__id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line__id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result__id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line__id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_answers__id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_message__id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_update_mark__id
+msgid "ID"
+msgstr ""
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,help:openeducat_quiz.field_op_quiz__message_needaction
+#: model:ir.model.fields,help:openeducat_quiz.field_op_quiz__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "Nếu chọn, các tin nhắn mới yêu cầu sự có mặt của bạn."
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,help:openeducat_quiz.field_op_quiz__message_has_error
+#: model:ir.model.fields,help:openeducat_quiz.field_op_quiz__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Nếu đánh dấu thì một số thông điệp có lỗi."
+
+#. module: openeducat_quiz
+#: code:addons/openeducat_quiz/models/question_bank.py:0
+#, python-format
+msgid "Import Template for question"
+msgstr "Nhập mẫu cho câu hỏi"
+
+#. module: openeducat_quiz
+#: code:addons/openeducat_quiz/models/question_bank.py:0
+#, python-format
+msgid "Import Template for question bank"
+msgstr "Nhập mẫu cho ngân hàng câu hỏi"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields.selection,name:openeducat_quiz.selection__op_quiz__state__open
+#: model:ir.model.fields.selection,name:openeducat_quiz.selection__op_quiz_result__state__open
+msgid "In-Progress"
+msgstr "Đang thực hiện"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields.selection,name:openeducat_quiz.selection__op_quiz__type__integration_exam
+msgid "Integration exam"
+msgstr "Kỳ thi theo phòng ban"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__message_is_follower
+msgid "Is Follower"
+msgstr "Trở thành người theo dõi"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_warning_page
+msgid "Không gian lận trong thi cử"
+msgstr ""
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+msgid "Kết quả"
+msgstr ""
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_render_single_form_view
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+msgid "Kết thúc"
+msgstr ""
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_answer_grade____last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank____last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_answer____last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line____last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_type____last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_wizard____last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz____last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_answer____last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_category____last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_config____last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line____last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result____last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line____last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_answers____last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_message____last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_update_mark____last_update
+msgid "Last Modified on"
+msgstr "Sửa lần cuối"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_answer_grade__write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank__write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_answer__write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line__write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_type__write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_wizard__write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_answer__write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_category__write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_config__write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line__write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result__write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line__write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_answers__write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_message__write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_update_mark__write_uid
+msgid "Last Updated by"
+msgstr "Cập nhật gần đây bởi"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_answer_grade__write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank__write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_answer__write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line__write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_type__write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_wizard__write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_answer__write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_category__write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_config__write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line__write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result__write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line__write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_answers__write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_message__write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_update_mark__write_date
+msgid "Last Updated on"
+msgstr "Cập nhật gần đây vào"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__auth_required
+msgid "Login required"
+msgstr "Yêu cầu phải đăng nhập"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Tệp đính kèm chính"
+
+#. module: openeducat_quiz
+#: model:res.groups,name:openeducat_quiz.group_op_management
+msgid "Management"
+msgstr "Quản lý"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields.selection,name:openeducat_quiz.selection__op_quiz__quiz_config__normal
+msgid "Manual"
+msgstr "Thủ công"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line__mark
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line__mark
+msgid "Marks"
+msgstr "Điểm"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_message__message
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Message"
+msgstr "Thông báo"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__message_has_error
+msgid "Message Delivery error"
+msgstr "Thông báo gửi đi gặp lỗi"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__message_ids
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__quiz_message_ids
+msgid "Messages"
+msgstr "Thông báo"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Min"
+msgstr "Phút"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__grace_period_minute
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__time_limit_minute
+msgid "Minutes"
+msgstr "Phút"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_answer_grade__name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank__name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_type__name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_category__name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result__name
+msgid "Name"
+msgstr "Tên"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_first_question
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_middle_question
+msgid "Next"
+msgstr "Kế tiếp"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__no_of_attempt
+msgid "No of Attempt"
+msgstr "Số lần làm"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__no_of_question
+msgid "No of Question from each Question Bank"
+msgstr "Không có câu hỏi nào từ mỗi Ngân hàng câu hỏi"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+msgid "Not Attempt Answers"
+msgstr "Câu hỏi trong bài thi đã hết"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Số lượng hành động"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_config__no_of_question
+msgid "Number of Question"
+msgstr "Số lượng câu hỏi"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__message_has_error_counter
+msgid "Number of errors"
+msgstr "Số lỗi"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,help:openeducat_quiz.field_op_quiz__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "Số thông báo cần xử lý"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,help:openeducat_quiz.field_op_quiz__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Số lượng tin gửi đi bị lỗi"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,help:openeducat_quiz.field_op_quiz__message_unread_counter
+msgid "Number of unread messages"
+msgstr "Số tin chưa đọc"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__prev_readonly
+msgid "Only One Time Answer"
+msgstr "Chỉ trả lời một lần"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields.selection,name:openeducat_quiz.selection__op_quiz__time_expire__auto_submit
+msgid "Open attempts are submitted automatically"
+msgstr "Các bài thi mở được gửi tự động"
+
+#. module: openeducat_quiz
+#: model:ir.module.category,name:openeducat_quiz.module_category_openeducat_quiz
+msgid "OpenEduCat quiz"
+msgstr ""
+
+#. module: openeducat_quiz
+#: model:ir.model.fields.selection,name:openeducat_quiz.selection__op_question_bank_line__que_type__optional
+#: model:ir.model.fields.selection,name:openeducat_quiz.selection__op_quiz_line__que_type__optional
+#: model:ir.model.fields.selection,name:openeducat_quiz.selection__op_quiz_result_line__que_type__optional
+msgid "Optional"
+msgstr "Tùy chọn"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+msgid "Original Answer"
+msgstr "Câu trả lời gốc"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_render_single_form_view
+msgid "Phút"
+msgstr ""
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_starting_page
+msgid "Please hear the audio before start exam"
+msgstr "Vui lòng nghe âm thanh trước khi bắt đầu bài kiểm tra"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_starting_page
+msgid "Please see the video before start exam"
+msgstr "Vui lòng xem video trước khi bắt đầu thi"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_last_question
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_middle_question
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_render_single_form_view
+msgid "Prev"
+msgstr "Trước"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__prev_allow
+msgid "Previous Question Allowed"
+msgstr "Cho phép trở lại câu hỏi trươc"
+
+#. module: openeducat_quiz
+#: model:ir.actions.act_window,name:openeducat_quiz.act_open_op_question_bank_line_view
+#: model:ir.actions.act_window,name:openeducat_quiz.act_open_op_update_mark_wizard_view
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_answer__question_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line__line_ids
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line__name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_answer__line_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line__name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line__name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_answers__line_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_update_mark__name
+#: model:ir.ui.menu,name:openeducat_quiz.op_question_bank_line_menu
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_line_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_line_tree
+msgid "Question"
+msgstr "Câu hỏi"
+
+#. module: openeducat_quiz
+#: model:ir.actions.act_window,name:openeducat_quiz.act_open_op_question_bank_view
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line__bank_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_wizard__bank_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_config__bank_id
+#: model:ir.ui.menu,name:openeducat_quiz.menu_op_question_bank
+#: model:ir.ui.menu,name:openeducat_quiz.op_question_bank_menu
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_search
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_tree
+msgid "Question Bank"
+msgstr "Ngân hàng câu hỏi"
+
+#. module: openeducat_quiz
+#: model:ir.actions.act_window,name:openeducat_quiz.act_open_op_question_bank_type_view
+#: model:ir.ui.menu,name:openeducat_quiz.menu_op_question_bank_type
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_type_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_type_search
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_type_tree
+msgid "Question Bank Type"
+msgstr "Loại câu hỏi Ngân hàng"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line__que_type
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line__que_type
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line__que_type
+msgid "Question Type"
+msgstr "Loại câu hỏi"
+
+#. module: openeducat_quiz
+#: model:ir.actions.act_window,name:openeducat_quiz.act_open_op_question_wizard_view
+#: model:ir.model,name:openeducat_quiz.model_op_quiz_line
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank__line_ids
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_wizard__question_ids
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__line_ids
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_question_wizard_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_update_mark_wizard_form
+msgid "Questions"
+msgstr "Câu hỏi"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Questions Configuration"
+msgstr "Cấu hình câu hỏi"
+
+#. module: openeducat_quiz
+#: model:ir.model.constraint,message:openeducat_quiz.constraint_op_quiz_line_check_mark
+msgid "Questions mark should be greater then 0"
+msgstr "Điểm câu hỏi phải lớn hơn 0"
+
+#. module: openeducat_quiz
+#: model:ir.actions.act_window,name:openeducat_quiz.act_open_op_quiz_view
+#: model:ir.model,name:openeducat_quiz.model_op_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_config__quiz_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line__quiz_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result__quiz_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_message__quiz_id
+#: model:ir.ui.menu,name:openeducat_quiz.menu_op_quiz
+#: model:ir.ui.menu,name:openeducat_quiz.op_quiz_menu
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_result_search
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_search
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_tree
+msgid "Quiz"
+msgstr "Bài kiểm tra"
+
+#. module: openeducat_quiz
+#: model:ir.model,name:openeducat_quiz.model_op_answer_grade
+msgid "Quiz Answer Grades"
+msgstr "Điểm trả lời câu đố"
+
+#. module: openeducat_quiz
+#: model:ir.model,name:openeducat_quiz.model_op_quiz_answer
+msgid "Quiz Answers"
+msgstr "Câu trả lời câu đố"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields.selection,name:openeducat_quiz.selection__op_quiz__quiz_config__quiz_bank_random
+msgid "Quiz Bank with Random Quesiton"
+msgstr "Câu hỏi ngẫu nhiên trong ngân hàng câu hỏi"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields.selection,name:openeducat_quiz.selection__op_quiz__quiz_config__quiz_bank_selected
+msgid "Quiz Bank with Selected Question"
+msgstr "Lựa chọn câu hỏi trong ngân hàng câu hỏi"
+
+#. module: openeducat_quiz
+#: model:ir.actions.act_window,name:openeducat_quiz.act_open_op_quiz_category_view
+#: model:ir.model,name:openeducat_quiz.model_op_quiz_category
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result__categ_id
+#: model:ir.ui.menu,name:openeducat_quiz.menu_op_quiz_category
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_category_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_category_search
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_category_tree
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_result_search
+msgid "Quiz Category"
+msgstr "Chuyên mục thi"
+
+#. module: openeducat_quiz
+#: model:ir.model,name:openeducat_quiz.model_op_quiz_config
+msgid "Quiz Configuration"
+msgstr "Cấu hình câu đố"
+
+#. module: openeducat_quiz
+#: model:ir.model,name:openeducat_quiz.model_op_question_bank
+msgid "Quiz Question Bank"
+msgstr "Ngân hàng câu hỏi trắc nghiệm"
+
+#. module: openeducat_quiz
+#: model:ir.model,name:openeducat_quiz.model_op_question_bank_answer
+msgid "Quiz Question Bank Answers"
+msgstr "Ngân hàng câu trả lời câu đố"
+
+#. module: openeducat_quiz
+#: model:ir.model,name:openeducat_quiz.model_op_question_bank_type
+msgid "Quiz Question Bank Type"
+msgstr "Loại ngân hàng câu hỏi trắc nghiệm"
+
+#. module: openeducat_quiz
+#: model:ir.model,name:openeducat_quiz.model_op_question_bank_line
+msgid "Quiz Question Lines"
+msgstr "Dòng câu hỏi đố vui"
+
+#. module: openeducat_quiz
+#: model:ir.model,name:openeducat_quiz.model_op_question_wizard
+msgid "Quiz Question Wizard"
+msgstr "Trình hướng dẫn câu hỏi trắc nghiệm"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__quiz_result_ids
+msgid "Quiz Result"
+msgstr "Kết quả câu đố"
+
+#. module: openeducat_quiz
+#: model:ir.model,name:openeducat_quiz.model_op_quiz_result_line
+msgid "Quiz Result Line"
+msgstr "Dòng kết quả bài kiểm tra"
+
+#. module: openeducat_quiz
+#: model:ir.model,name:openeducat_quiz.model_op_quiz_result_line_answers
+msgid "Quiz Result Line Answer"
+msgstr "Dòng kết quả câu đố"
+
+#. module: openeducat_quiz
+#: model:ir.model,name:openeducat_quiz.model_op_quiz_result_message
+msgid "Quiz Result Message"
+msgstr "Thông báo kết quả bài kiểm tra"
+
+#. module: openeducat_quiz
+#: model:ir.model,name:openeducat_quiz.model_op_quiz_result
+msgid "Quiz Results"
+msgstr "Kết quả bài kiểm tra"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Re-open"
+msgstr "Mở lại"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result__received_marks
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line__mark
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.exam_user_result_profile
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.my_result
+msgid "Received Marks"
+msgstr "Tổng điểm đạt được"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line__result_id
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.portal_my_result_account_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_result_form
+msgid "Result"
+msgstr "Kết quả"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Result Configuration"
+msgstr "Cấu hình kết quả"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_message__result_from
+msgid "Result From (%)"
+msgstr "Kết quả từ (%)"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result__line_ids
+msgid "Result Line"
+msgstr "Dòng kết quả"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Result Message"
+msgstr "Thông báo kết quả"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_message__result_to
+msgid "Result To (%)"
+msgstr "Kết quả đến (%)"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Result won't display if descriptive Questions."
+msgstr "Kết quả sẽ không hiển thị nếu là câu hỏi mô tả"
+
+#. module: openeducat_quiz
+#: model:ir.actions.act_window,name:openeducat_quiz.act_open_op_quiz_result_view
+#: model:ir.ui.menu,name:openeducat_quiz.menu_op_quiz_result
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_result_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_result_pivot
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_result_search
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_result_tree
+msgid "Results"
+msgstr "Kết quả"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Lỗi gửi SMS"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+msgid "Sai"
+msgstr ""
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.exam_user_result_profile
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.my_result
+msgid "Score"
+msgstr "Tổng Điểm"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result__score
+msgid "Score (%)"
+msgstr "Điểm(%)"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_render_exam_main_form_view
+msgid "Score :"
+msgstr "Điểm :"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_question_wizard_form
+msgid "Select Questions"
+msgstr "Lựa chọn câu hỏi"
+
+#. module: openeducat_quiz
+#: code:addons/openeducat_quiz/wizard/update_mark.py:0
+#, python-format
+msgid "Set proper marks."
+msgstr "Đặt dấu hiệu thích hợp."
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__shuffle
+msgid "Shuffle the Choices"
+msgstr "Trộn các lựa chọn"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__single_que
+msgid "Single Question Per Page"
+msgstr "Một câu hỏi mỗi trang"
+
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__description
+msgid "Sort Description"
+msgstr "Sắp xếp mô tả"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result__time_spent_hr
+msgid "Spent Hours"
+msgstr "Giờ đã dùng"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result__time_spent_minute
+msgid "Spent Minutes"
+msgstr "Phút đã dùng"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result__time_spent_second
+msgid "Spent Seconds"
+msgstr "Giây đã dùng"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__start_date
+msgid "Start date"
+msgstr "Ngày bắt đầu"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Starting Page"
+msgstr "Trang bắt đầu"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__start_view
+msgid "Starting View"
+msgstr "Hiển thị ban đầu"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__state
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result__state
+msgid "State"
+msgstr "Tỉnh/Thành Phố"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__grace_period_hr
+msgid "Submission Grace Period"
+msgstr "Gửi thời gian gia hạn"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+msgid "Số câu"
+msgstr ""
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_completed
+msgid "Thank you for Quiz"
+msgstr "Cảm ơn vì câu đố"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.my_result
+msgid "There are currently no Result for your account."
+msgstr "Hiện tại không có kết quả cho tài khoản của bạn"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields.selection,name:openeducat_quiz.selection__op_quiz__time_expire__grace_period
+msgid ""
+"There is a grace period when open attempts can be submitted, but no more "
+"questions answered"
+msgstr ""
+"Có một khoảng thời gian gia hạn khi các bài thi mở được gửi, nhưng không "
+"có câu hỏi nào khác được trả lời"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__time_config
+msgid "Time Configuration"
+msgstr "Cấu hình thời gian"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Time Limit"
+msgstr "Giới hạn thời gian"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Timing Configuration"
+msgstr "Cấu hình thời gian"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_render_single_form_view
+msgid "Tiếp theo"
+msgstr ""
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result__total_correct
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.exam_user_result_profile
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.my_result
+msgid "Total Correct"
+msgstr "Kết quả đúng"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result__total_incorrect
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.exam_user_result_profile
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.my_result
+msgid "Total Incorrect"
+msgstr "Kết quả sai"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__total_marks
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result__total_marks
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.exam_user_result_profile
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.my_result
+msgid "Total Marks"
+msgstr "Tổng điểm"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result__total_not_attempt
+msgid "Total Not Attempt"
+msgstr "Tổng không có bài thi nào"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result__total_question
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.exam_user_result_profile
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.my_result
+msgid "Total Question"
+msgstr "Tổng số câu hỏi"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+msgid "Truly Given Answers"
+msgstr "Câu trả lời đúng được đưa ra"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank__bank_type_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__type
+msgid "Type"
+msgstr "Loại"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__message_unread
+msgid "Unread Messages"
+msgstr "Tin chưa đọc"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "Bộ đếm tin chưa đọc"
+
+#. module: openeducat_quiz
+#: model:ir.model,name:openeducat_quiz.model_op_update_mark
+msgid "Update Mark Wizard"
+msgstr "Hướng dẫn cập nhật điểm "
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_result_search
+msgid "User"
+msgstr "Người dùng"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line__given_answer
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_update_mark__mark
+msgid "User Answer"
+msgstr "Câu trả lời của người dùng"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__user_ids
+msgid "Users"
+msgstr "Người dùng"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,help:openeducat_quiz.field_op_quiz__auth_required
+msgid ""
+"Users with a public link will be requested to login before taking part to "
+"the survey"
+msgstr ""
+"Người dùng có liên kết công khai sẽ được yêu cầu đăng nhập trước khi tham "
+"gia bài khảo sát"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields.selection,name:openeducat_quiz.selection__op_quiz__start_view__video
+msgid "Video"
+msgstr ""
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__quiz_video
+msgid "Video File"
+msgstr "Tập tin video"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "View Exam"
+msgstr "Xem bài thi"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.auth_required
+msgid "Vui lòng truy cập liên kết"
+msgstr ""
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__website_message_ids
+msgid "Website Messages"
+msgstr "Thông báo Website"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,help:openeducat_quiz.field_op_quiz__website_message_ids
+msgid "Website communication history"
+msgstr "Lịch sử thông tin liên lạc website"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__time_expire
+msgid "When Time Expires"
+msgstr "Khi hết thời gian"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+msgid "Wrongly Given Answers"
+msgstr "Câu trả lời sai được đưa ra"
+
+#. module: openeducat_quiz
+#: code:addons/openeducat_quiz/models/quiz.py:0
+#, python-format
+msgid "You are already reached maximum attempt of this exam"
+msgstr "Bạn đã đạt được điểm tối đa trong kỳ thi này"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.my_result
+msgid "Your Result"
+msgstr "Kết quả của bạn"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_completed
+msgid "Your answers are recorded"
+msgstr "Câu trả lời của bạn được ghi lại"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.auth_required
+msgid "Yêu cầu đăng nhập"
+msgstr ""
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_question_wizard_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_update_mark_wizard_form
+msgid "or"
+msgstr "hoặc"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line__que_id
+msgid "question"
+msgstr "Câu hỏi"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result__user_id
+#: model:res.groups,name:openeducat_quiz.group_op_user
+msgid "user"
+msgstr "Tài khoản"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+msgid "Điểm"
+msgstr ""
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+msgid "Đúng"
+msgstr ""
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.auth_required
+msgid "Đăng nhập"
+msgstr ""

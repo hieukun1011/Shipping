@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="op_gk_q01" model="op.question.bank.line">
+            <field name="name">Garampani sanctuary is located at</field>
+            <field name="mark" type="float">1.0</field>
+            <field name="bank_id" ref="op_qu_bnk_gk"/>
+        </record>
+
+        <record id="op_gk_q01_a01" model="op.question.bank.answer">
+            <field name="name">Junagarh, Gujarat</field>
+            <field name="grade_id" ref="op_ans_grd_0"/>
+            <field name="question_id" ref="op_gk_q01"/>
+        </record>
+
+        <record id="op_gk_q01_a02" model="op.question.bank.answer">
+            <field name="name">Diphu, Assam</field>
+            <field name="grade_id" ref="op_ans_grd_100p"/>
+            <field name="question_id" ref="op_gk_q01"/>
+        </record>
+
+        <record id="op_gk_q01_a03" model="op.question.bank.answer">
+            <field name="name">Kohima, Nagaland</field>
+            <field name="grade_id" ref="op_ans_grd_0"/>
+            <field name="question_id" ref="op_gk_q01"/>
+        </record>
+
+        <record id="op_gk_q01_a04" model="op.question.bank.answer">
+            <field name="name">Gangtok, Sikkim</field>
+            <field name="grade_id" ref="op_ans_grd_0"/>
+            <field name="question_id" ref="op_gk_q01"/>
+        </record>
+
+        <record id="op_gk_q02" model="op.question.bank.line">
+            <field name="name">Which city known as capital city of India?</field>
+            <field name="mark" type="float">1.0</field>
+            <field name="bank_id" ref="op_qu_bnk_gk"/>
+        </record>
+
+        <record id="op_gk_q02_a01" model="op.question.bank.answer">
+            <field name="name">Ahmedabad</field>
+            <field name="grade_id" ref="op_ans_grd_0"/>
+            <field name="question_id" ref="op_gk_q02"/>
+        </record>
+
+        <record id="op_gk_q02_a02" model="op.question.bank.answer">
+            <field name="name">Delhi</field>
+            <field name="grade_id" ref="op_ans_grd_100p"/>
+            <field name="question_id" ref="op_gk_q02"/>
+        </record>
+
+        <record id="op_gk_q02_a03" model="op.question.bank.answer">
+            <field name="name">Mumbai</field>
+            <field name="grade_id" ref="op_ans_grd_0"/>
+            <field name="question_id" ref="op_gk_q02"/>
+        </record>
+
+        <record id="op_gk_q02_a04" model="op.question.bank.answer">
+            <field name="name">Goa</field>
+            <field name="grade_id" ref="op_ans_grd_0"/>
+            <field name="question_id" ref="op_gk_q02"/>
+        </record>
+
+        <record id="op_gk_q03" model="op.question.bank.line">
+            <field name="name">FFC stands for</field>
+            <field name="mark" type="float">1.0</field>
+            <field name="bank_id" ref="op_qu_bnk_gk"/>
+        </record>
+
+        <record id="op_gk_q03_a01" model="op.question.bank.answer">
+            <field name="name">Foreign Finance Corporation</field>
+            <field name="grade_id" ref="op_ans_grd_0"/>
+            <field name="question_id" ref="op_gk_q03"/>
+        </record>
+
+        <record id="op_gk_q03_a02" model="op.question.bank.answer">
+            <field name="name">Film Finance Corporation</field>
+            <field name="grade_id" ref="op_ans_grd_100p"/>
+            <field name="question_id" ref="op_gk_q03"/>
+        </record>
+
+        <record id="op_gk_q03_a03" model="op.question.bank.answer">
+            <field name="name">Federation of Football Council</field>
+            <field name="grade_id" ref="op_ans_grd_0"/>
+            <field name="question_id" ref="op_gk_q03"/>
+        </record>
+
+        <record id="op_gk_q03_a04" model="op.question.bank.answer">
+            <field name="name">None of the above</field>
+            <field name="grade_id" ref="op_ans_grd_0"/>
+            <field name="question_id" ref="op_gk_q03"/>
+        </record>
+
+        <record id="op_gk_q04" model="op.question.bank.line">
+            <field name="name">Fastest shorthand writer was</field>
+            <field name="mark" type="float">1.0</field>
+            <field name="bank_id" ref="op_qu_bnk_gk"/>
+        </record>
+
+        <record id="op_gk_q04_a01" model="op.question.bank.answer">
+            <field name="name">Dr. G. D. Bist</field>
+            <field name="grade_id" ref="op_ans_grd_100p"/>
+            <field name="question_id" ref="op_gk_q04"/>
+        </record>
+
+        <record id="op_gk_q04_a02" model="op.question.bank.answer">
+            <field name="name">J.M. Tagore</field>
+            <field name="grade_id" ref="op_ans_grd_0"/>
+            <field name="question_id" ref="op_gk_q04"/>
+        </record>
+
+        <record id="op_gk_q04_a03" model="op.question.bank.answer">
+            <field name="name">J.R.D. Tata</field>
+            <field name="grade_id" ref="op_ans_grd_0"/>
+            <field name="question_id" ref="op_gk_q04"/>
+        </record>
+
+        <record id="op_gk_q04_a04" model="op.question.bank.answer">
+            <field name="name">Khudada Khan</field>
+            <field name="grade_id" ref="op_ans_grd_0"/>
+            <field name="question_id" ref="op_gk_q04"/>
+        </record>
+
+        <record id="op_gk_q05" model="op.question.bank.line">
+            <field name="name">Galileo was an Italian astronomer who</field>
+            <field name="mark" type="float">1.0</field>
+            <field name="bank_id" ref="op_qu_bnk_gk"/>
+        </record>
+
+        <record id="op_gk_q05_a01" model="op.question.bank.answer">
+            <field name="name">developed the telescope</field>
+            <field name="grade_id" ref="op_ans_grd_0"/>
+            <field name="question_id" ref="op_gk_q05"/>
+        </record>
+
+        <record id="op_gk_q05_a02" model="op.question.bank.answer">
+            <field name="name">discovered four satellites of Jupiter</field>
+            <field name="grade_id" ref="op_ans_grd_0"/>
+            <field name="question_id" ref="op_gk_q05"/>
+        </record>
+
+        <record id="op_gk_q05_a03" model="op.question.bank.answer">
+            <field name="name">discovered that the movement of pendulum produces a regular time measurement.</field>
+            <field name="grade_id" ref="op_ans_grd_0"/>
+            <field name="question_id" ref="op_gk_q05"/>
+        </record>
+
+        <record id="op_gk_q05_a04" model="op.question.bank.answer">
+            <field name="name">All of the above</field>
+            <field name="grade_id" ref="op_ans_grd_100p"/>
+            <field name="question_id" ref="op_gk_q05"/>
+        </record>
+
+        <record id="op_gk_q06" model="op.question.bank.line">
+            <field name="name">Golf player Vijay Singh belongs to which country?</field>
+            <field name="mark" type="float">1.0</field>
+            <field name="bank_id" ref="op_qu_bnk_gk"/>
+        </record>
+
+        <record id="op_gk_q06_a01" model="op.question.bank.answer">
+            <field name="name">USA</field>
+            <field name="grade_id" ref="op_ans_grd_0"/>
+            <field name="question_id" ref="op_gk_q06"/>
+        </record>
+
+        <record id="op_gk_q06_a02" model="op.question.bank.answer">
+            <field name="name">Fiji</field>
+            <field name="grade_id" ref="op_ans_grd_100p"/>
+            <field name="question_id" ref="op_gk_q06"/>
+        </record>
+
+        <record id="op_gk_q06_a03" model="op.question.bank.answer">
+            <field name="name">India</field>
+            <field name="grade_id" ref="op_ans_grd_0"/>
+            <field name="question_id" ref="op_gk_q06"/>
+        </record>
+
+        <record id="op_gk_q06_a04" model="op.question.bank.answer">
+            <field name="name">UK</field>
+            <field name="grade_id" ref="op_ans_grd_0"/>
+            <field name="question_id" ref="op_gk_q06"/>
+        </record>
+
+        <record id="op_gk_q07" model="op.question.bank.line">
+            <field name="name">ICICI is the name of a</field>
+            <field name="mark" type="float">1.0</field>
+            <field name="bank_id" ref="op_qu_bnk_gk"/>
+        </record>
+
+        <record id="op_gk_q07_a01" model="op.question.bank.answer">
+            <field name="name">chemical industry</field>
+            <field name="grade_id" ref="op_ans_grd_0"/>
+            <field name="question_id" ref="op_gk_q07"/>
+        </record>
+
+        <record id="op_gk_q07_a02" model="op.question.bank.answer">
+            <field name="name">bureau</field>
+            <field name="grade_id" ref="op_ans_grd_0"/>
+            <field name="question_id" ref="op_gk_q07"/>
+        </record>
+
+        <record id="op_gk_q07_a03" model="op.question.bank.answer">
+            <field name="name">corporation</field>
+            <field name="grade_id" ref="op_ans_grd_0"/>
+            <field name="question_id" ref="op_gk_q07"/>
+        </record>
+
+        <record id="op_gk_q07_a04" model="op.question.bank.answer">
+            <field name="name">financial institution</field>
+            <field name="grade_id" ref="op_ans_grd_100p"/>
+            <field name="question_id" ref="op_gk_q07"/>
+        </record>
+
+        <record id="op_gk_q08" model="op.question.bank.line">
+            <field name="name">Dandia' is a popular dance of</field>
+            <field name="mark" type="float">1.0</field>
+            <field name="bank_id" ref="op_qu_bnk_gk"/>
+        </record>
+
+        <record id="op_gk_q08_a01" model="op.question.bank.answer">
+            <field name="name">Punjab</field>
+            <field name="grade_id" ref="op_ans_grd_0"/>
+            <field name="question_id" ref="op_gk_q08"/>
+        </record>
+
+        <record id="op_gk_q08_a02" model="op.question.bank.answer">
+            <field name="name">Gujarat</field>
+            <field name="grade_id" ref="op_ans_grd_100p"/>
+            <field name="question_id" ref="op_gk_q08"/>
+        </record>
+
+        <record id="op_gk_q08_a03" model="op.question.bank.answer">
+            <field name="name">Tamil Nadu</field>
+            <field name="grade_id" ref="op_ans_grd_0"/>
+            <field name="question_id" ref="op_gk_q08"/>
+        </record>
+
+        <record id="op_gk_q08_a04" model="op.question.bank.answer">
+            <field name="name">Maharashtra</field>
+            <field name="grade_id" ref="op_ans_grd_0"/>
+            <field name="question_id" ref="op_gk_q08"/>
+        </record>
+
+        <record id="op_gk_q09" model="op.question.bank.line">
+            <field name="name">The words 'Satyameva Jayate' inscribed below the base plate of the emblem of India are taken from</field>
+            <field name="mark" type="float">1.0</field>
+            <field name="bank_id" ref="op_qu_bnk_gk"/>
+        </record>
+
+        <record id="op_gk_q09_a01" model="op.question.bank.answer">
+            <field name="name">Rigveda</field>
+            <field name="grade_id" ref="op_ans_grd_0"/>
+            <field name="question_id" ref="op_gk_q09"/>
+        </record>
+
+        <record id="op_gk_q09_a02" model="op.question.bank.answer">
+            <field name="name">Sangeet Akademi</field>
+            <field name="grade_id" ref="op_ans_grd_100p"/>
+            <field name="question_id" ref="op_gk_q09"/>
+        </record>
+
+        <record id="op_gk_q09_a03" model="op.question.bank.answer">
+            <field name="name">Sahitya Akademi</field>
+            <field name="grade_id" ref="op_ans_grd_0"/>
+            <field name="question_id" ref="op_gk_q09"/>
+        </record>
+
+        <record id="op_gk_q09_a04" model="op.question.bank.answer">
+            <field name="name">Lalit Kala Akademi</field>
+            <field name="grade_id" ref="op_ans_grd_0"/>
+            <field name="question_id" ref="op_gk_q09"/>
+        </record>
+
+        <record id="op_gk_q10" model="op.question.bank.line">
+            <field name="name">The Rath Yatra at Puri is celebrated in honour of which Hindu deity</field>
+            <field name="mark" type="float">1.0</field>
+            <field name="bank_id" ref="op_qu_bnk_gk"/>
+        </record>
+
+        <record id="op_gk_q10_a01" model="op.question.bank.answer">
+            <field name="name">Ram</field>
+            <field name="grade_id" ref="op_ans_grd_0"/>
+            <field name="question_id" ref="op_gk_q10"/>
+        </record>
+
+        <record id="op_gk_q10_a02" model="op.question.bank.answer">
+            <field name="name">Jaganath</field>
+            <field name="grade_id" ref="op_ans_grd_100p"/>
+            <field name="question_id" ref="op_gk_q10"/>
+        </record>
+
+        <record id="op_gk_q10_a03" model="op.question.bank.answer">
+            <field name="name">Shiva</field>
+            <field name="grade_id" ref="op_ans_grd_0"/>
+            <field name="question_id" ref="op_gk_q10"/>
+        </record>
+
+        <record id="op_gk_q10_a04" model="op.question.bank.answer">
+            <field name="name">Vishnu</field>
+            <field name="grade_id" ref="op_ans_grd_0"/>
+            <field name="question_id" ref="op_gk_q10"/>
+        </record>
+    </data>
+</odoo>

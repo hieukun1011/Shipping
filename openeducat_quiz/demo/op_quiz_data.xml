@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="op_qz_1" model="op.quiz">
+            <field name="name">Quiz Round 1</field>
+            <field name="categ_id" ref="op_qz_ctg_1"/>
+            <field name="quiz_config">quiz_bank_selected</field>
+        </record>
+
+        <record id="op_qz_2" model="op.quiz">
+            <field name="name">Quiz Round 2</field>
+            <field name="categ_id" ref="op_qz_ctg_2"/>
+            <field name="quiz_config">quiz_bank_random</field>
+        </record>
+    </data>
+</odoo>

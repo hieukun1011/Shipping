@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="op_qz_cnf_1" model="op.quiz.config">
+            <field name="quiz_id" ref="op_qz_2"/>
+            <field name="bank_id" ref="op_qu_bnk_c"/>
+            <field name="no_of_question" type="int">10</field>
+        </record>
+
+        <record id="op_qz_cnf_2" model="op.quiz.config">
+            <field name="quiz_id" ref="op_qz_2"/>
+            <field name="bank_id" ref="op_qu_bnk_cpp"/>
+            <field name="no_of_question" type="int">10</field>
+        </record>
+
+        <!--Set Configuration Before STATE is going to OPEN-->
+        <record id="op_qz_2" model="op.quiz">
+            <field name="state">open</field>
+        </record>
+    </data>
+</odoo>

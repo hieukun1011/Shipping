@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="op_qz_ln_01" model="op.quiz.line">
+            <field name="name">Which of the following statements should be used
+                to obtain a remainder after dividing 3.14 by 2.1 ?
+            </field>
+            <field name="mark" type="float">1.0</field>
+            <field name="quiz_id" ref="op_qz_1"/>
+            <field name="que_id" ref="op_c_q01"/>
+        </record>
+
+        <record id="op_qz_ln_01_c_q01_a01" model="op.quiz.answer">
+            <field name="name">rem = 3.14 % 2.1;</field>
+            <field name="grade_id" ref="op_ans_grd_100n"/>
+            <field name="line_id" ref="op_qz_ln_01"/>
+        </record>
+
+        <record id="op_qz_ln_01_c_q01_a02" model="op.quiz.answer">
+            <field name="name">rem = modf(3.14, 2.1);</field>
+            <field name="grade_id" ref="op_ans_grd_100n"/>
+            <field name="line_id" ref="op_qz_ln_01"/>
+        </record>
+
+        <record id="op_qz_ln_01_c_q01_a03" model="op.quiz.answer">
+            <field name="name">rem = fmod(3.14, 2.1);</field>
+            <field name="grade_id" ref="op_ans_grd_100p"/>
+            <field name="line_id" ref="op_qz_ln_01"/>
+        </record>
+
+        <record id="op_qz_ln_01_c_q01_a04" model="op.quiz.answer">
+            <field name="name">Remainder cannot be obtain in floating point
+                division.
+            </field>
+            <field name="grade_id" ref="op_ans_grd_100n"/>
+            <field name="line_id" ref="op_qz_ln_01"/>
+        </record>
+
+        <record id="op_qz_ln_02" model="op.quiz.line">
+            <field name="name">Which of the following special symbol allowed in
+                a variable name?
+            </field>
+            <field name="mark" type="float">1.0</field>
+            <field name="quiz_id" ref="op_qz_1"/>
+            <field name="que_id" ref="op_c_q02"/>
+        </record>
+
+        <record id="op_qz_ln_02_c_q02_a01" model="op.quiz.answer">
+            <field name="name">* (asterisk)</field>
+            <field name="grade_id" ref="op_ans_grd_100n"/>
+            <field name="line_id" ref="op_qz_ln_02"/>
+        </record>
+
+        <record id="op_qz_ln_02_c_q02_a02" model="op.quiz.answer">
+            <field name="name">| (pipeline)</field>
+            <field name="grade_id" ref="op_ans_grd_100n"/>
+            <field name="line_id" ref="op_qz_ln_02"/>
+        </record>
+
+        <record id="op_qz_ln_02_c_q02_a03" model="op.quiz.answer">
+            <field name="name">- (hyphen)</field>
+            <field name="grade_id" ref="op_ans_grd_100n"/>
+            <field name="line_id" ref="op_qz_ln_02"/>
+        </record>
+
+        <record id="op_qz_ln_02_c_q02_a04" model="op.quiz.answer">
+            <field name="name">_ (underscore)</field>
+            <field name="grade_id" ref="op_ans_grd_100p"/>
+            <field name="line_id" ref="op_qz_ln_02"/>
+        </record>
+
+        <record id="op_qz_ln_03" model="op.quiz.line">
+            <field name="name">Garampani sanctuary is located at</field>
+            <field name="mark" type="float">1.0</field>
+            <field name="quiz_id" ref="op_qz_1"/>
+            <field name="que_id" ref="op_gk_q01"/>
+        </record>
+
+        <record id="op_qz_ln_03_gk_q01_a01" model="op.quiz.answer">
+            <field name="name">Junagarh, Gujarat</field>
+            <field name="grade_id" ref="op_ans_grd_0"/>
+            <field name="line_id" ref="op_qz_ln_03"/>
+        </record>
+
+        <record id="op_qz_ln_03_gk_q01_a02" model="op.quiz.answer">
+            <field name="name">Diphu, Assam</field>
+            <field name="grade_id" ref="op_ans_grd_100p"/>
+            <field name="line_id" ref="op_qz_ln_03"/>
+        </record>
+
+        <record id="op_qz_ln_03_gk_q01_a03" model="op.quiz.answer">
+            <field name="name">Kohima, Nagaland</field>
+            <field name="grade_id" ref="op_ans_grd_0"/>
+            <field name="line_id" ref="op_qz_ln_03"/>
+        </record>
+
+        <record id="op_qz_ln_03_gk_q01_a04" model="op.quiz.answer">
+            <field name="name">Gangtok, Sikkim</field>
+            <field name="grade_id" ref="op_ans_grd_0"/>
+            <field name="line_id" ref="op_qz_ln_03"/>
+        </record>
+
+        <record id="op_qz_ln_04" model="op.quiz.line">
+            <field name="name">Which city known as capital city of India?
+            </field>
+            <field name="mark" type="float">1.0</field>
+            <field name="quiz_id" ref="op_qz_1"/>
+            <field name="que_id" ref="op_gk_q02"/>
+        </record>
+
+        <record id="op_qz_ln_04_gk_q02_a01" model="op.quiz.answer">
+            <field name="name">Ahmedabad</field>
+            <field name="grade_id" ref="op_ans_grd_0"/>
+            <field name="line_id" ref="op_qz_ln_04"/>
+        </record>
+
+        <record id="op_qz_ln_04_gk_q02_a02" model="op.quiz.answer">
+            <field name="name">Delhi</field>
+            <field name="grade_id" ref="op_ans_grd_100p"/>
+            <field name="line_id" ref="op_qz_ln_04"/>
+        </record>
+
+        <record id="op_qz_ln_04_gk_q02_a03" model="op.quiz.answer">
+            <field name="name">Mumbai</field>
+            <field name="grade_id" ref="op_ans_grd_0"/>
+            <field name="line_id" ref="op_qz_ln_04"/>
+        </record>
+
+        <record id="op_qz_ln_04_gk_q02_a04" model="op.quiz.answer">
+            <field name="name">Goa</field>
+            <field name="grade_id" ref="op_ans_grd_0"/>
+            <field name="line_id" ref="op_qz_ln_04"/>
+        </record>
+
+        <record id="op_qz_ln_05" model="op.quiz.line">
+            <field name="name">Sam had 6 boxes of 17 small cars . He met a
+                friend and gave him 10 small cars. How many small cars does he
+                have now ?
+            </field>
+            <field name="mark" type="float">1.0</field>
+            <field name="quiz_id" ref="op_qz_1"/>
+            <field name="que_id" ref="op_math_q01"/>
+        </record>
+
+        <record id="op_qz_ln_05_math_q01_a01" model="op.quiz.answer">
+            <field name="name">50</field>
+            <field name="grade_id" ref="op_ans_grd_25n"/>
+            <field name="line_id" ref="op_qz_ln_05"/>
+        </record>
+
+        <record id="op_qz_ln_05_math_q01_a02" model="op.quiz.answer">
+            <field name="name">60</field>
+            <field name="grade_id" ref="op_ans_grd_25n"/>
+            <field name="line_id" ref="op_qz_ln_05"/>
+        </record>
+
+        <record id="op_qz_ln_05_math_q01_a03" model="op.quiz.answer">
+            <field name="name">92</field>
+            <field name="grade_id" ref="op_ans_grd_100p"/>
+            <field name="line_id" ref="op_qz_ln_05"/>
+        </record>
+
+        <record id="op_qz_ln_05_math_q01_a04" model="op.quiz.answer">
+            <field name="name">100</field>
+            <field name="grade_id" ref="op_ans_grd_25n"/>
+            <field name="line_id" ref="op_qz_ln_05"/>
+        </record>
+
+        <record id="op_qz_ln_06" model="op.quiz.line">
+            <field name="name">8 cm = ? mm</field>
+            <field name="mark" type="float">1.0</field>
+            <field name="quiz_id" ref="op_qz_1"/>
+            <field name="que_id" ref="op_math_q02"/>
+        </record>
+
+        <record id="op_qz_ln_06_math_q02_a01" model="op.quiz.answer">
+            <field name="name">80</field>
+            <field name="grade_id" ref="op_ans_grd_100p"/>
+            <field name="line_id" ref="op_qz_ln_06"/>
+        </record>
+
+        <record id="op_qz_ln_06_math_q02_a02" model="op.quiz.answer">
+            <field name="name">96</field>
+            <field name="grade_id" ref="op_ans_grd_25n"/>
+            <field name="line_id" ref="op_qz_ln_06"/>
+        </record>
+
+        <record id="op_qz_ln_06_math_q02_a03" model="op.quiz.answer">
+            <field name="name">120</field>
+            <field name="grade_id" ref="op_ans_grd_25n"/>
+            <field name="line_id" ref="op_qz_ln_06"/>
+        </record>
+
+        <record id="op_qz_ln_06_math_q02_a04" model="op.quiz.answer">
+            <field name="name">40</field>
+            <field name="grade_id" ref="op_ans_grd_25n"/>
+            <field name="line_id" ref="op_qz_ln_06"/>
+        </record>
+
+        <record id="op_qz_ln_07" model="op.quiz.line">
+            <field name="name">Quartz crystals normally used in quartz clocks
+                etc. is chemically
+            </field>
+            <field name="mark" type="float">1.0</field>
+            <field name="quiz_id" ref="op_qz_1"/>
+            <field name="que_id" ref="op_sci_q09"/>
+        </record>
+
+        <record id="op_qz_ln_07_sci_q09_a01" model="op.quiz.answer">
+            <field name="name">silicon dioxide</field>
+            <field name="grade_id" ref="op_ans_grd_100p"/>
+            <field name="line_id" ref="op_qz_ln_07"/>
+        </record>
+
+        <record id="op_qz_ln_07_sci_q09_a02" model="op.quiz.answer">
+            <field name="name">germanium oxide</field>
+            <field name="grade_id" ref="op_ans_grd_100n"/>
+            <field name="line_id" ref="op_qz_ln_07"/>
+        </record>
+
+        <record id="op_qz_ln_07_sci_q09_a03" model="op.quiz.answer">
+            <field name="name">a mixture of germanium oxide and silicon
+                dioxide
+            </field>
+            <field name="grade_id" ref="op_ans_grd_100n"/>
+            <field name="line_id" ref="op_qz_ln_07"/>
+        </record>
+
+        <record id="op_qz_ln_07_sci_q09_a04" model="op.quiz.answer">
+            <field name="name">sodium silicate</field>
+            <field name="grade_id" ref="op_ans_grd_100n"/>
+            <field name="line_id" ref="op_qz_ln_07"/>
+        </record>
+
+        <record id="op_qz_ln_08" model="op.quiz.line">
+            <field name="name">Which of the gas is not known as green house
+                gas?
+            </field>
+            <field name="mark" type="float">1.0</field>
+            <field name="quiz_id" ref="op_qz_1"/>
+            <field name="que_id" ref="op_sci_q09"/>
+        </record>
+
+        <record id="op_qz_ln_08_sci_q10_a01" model="op.quiz.answer">
+            <field name="name">Methane</field>
+            <field name="grade_id" ref="op_ans_grd_100n"/>
+            <field name="line_id" ref="op_qz_ln_08"/>
+        </record>
+
+        <record id="op_qz_ln_08_sci_q10_a02" model="op.quiz.answer">
+            <field name="name">Nitrous oxide</field>
+            <field name="grade_id" ref="op_ans_grd_100n"/>
+            <field name="line_id" ref="op_qz_ln_08"/>
+        </record>
+
+        <record id="op_qz_ln_08_sci_q10_a03" model="op.quiz.answer">
+            <field name="name">Carbon dioxide</field>
+            <field name="grade_id" ref="op_ans_grd_100n"/>
+            <field name="line_id" ref="op_qz_ln_08"/>
+        </record>
+
+        <record id="op_qz_ln_08_sci_q10_a04" model="op.quiz.answer">
+            <field name="name">Hydrogen</field>
+            <field name="grade_id" ref="op_ans_grd_100p"/>
+            <field name="line_id" ref="op_qz_ln_08"/>
+        </record>
+
+        <record id="op_qz_ln_09" model="op.quiz.line">
+            <field name="name">Which of the following type of class allows only
+                one object of it to be created?
+            </field>
+            <field name="mark" type="float">1.0</field>
+            <field name="quiz_id" ref="op_qz_1"/>
+            <field name="que_id" ref="op_cpp_q01"/>
+        </record>
+
+        <record id="op_qz_ln_09_cpp_q01_a01" model="op.quiz.answer">
+            <field name="name">Virtual class;</field>
+            <field name="grade_id" ref="op_ans_grd_100n"/>
+            <field name="line_id" ref="op_qz_ln_09"/>
+        </record>
+
+        <record id="op_qz_ln_09_cpp_q01_a02" model="op.quiz.answer">
+            <field name="name">Abstract class</field>
+            <field name="grade_id" ref="op_ans_grd_100n"/>
+            <field name="line_id" ref="op_qz_ln_09"/>
+        </record>
+
+        <record id="op_qz_ln_09_cpp_q01_a03" model="op.quiz.answer">
+            <field name="name">Singleton class</field>
+            <field name="grade_id" ref="op_ans_grd_100p"/>
+            <field name="line_id" ref="op_qz_ln_09"/>
+        </record>
+
+        <record id="op_qz_ln_09_cpp_q01_a04" model="op.quiz.answer">
+            <field name="name">Friend class</field>
+            <field name="grade_id" ref="op_ans_grd_100n"/>
+            <field name="line_id" ref="op_qz_ln_09"/>
+        </record>
+
+        <record id="op_qz_ln_10" model="op.quiz.line">
+            <field name="name">Which of the following is not a type of
+                constructor?
+            </field>
+            <field name="mark" type="float">1.0</field>
+            <field name="quiz_id" ref="op_qz_1"/>
+            <field name="que_id" ref="op_cpp_q02"/>
+        </record>
+
+        <record id="op_qz_ln_10_cpp_q02_a01" model="op.quiz.answer">
+            <field name="name">Copy constructor</field>
+            <field name="grade_id" ref="op_ans_grd_100n"/>
+            <field name="line_id" ref="op_qz_ln_10"/>
+        </record>
+
+        <record id="op_qz_ln_10_cpp_q02_a02" model="op.quiz.answer">
+            <field name="name">Friend constructor</field>
+            <field name="grade_id" ref="op_ans_grd_100p"/>
+            <field name="line_id" ref="op_qz_ln_10"/>
+        </record>
+
+        <record id="op_qz_ln_10_cpp_q02_a03" model="op.quiz.answer">
+            <field name="name">Default constructor</field>
+            <field name="grade_id" ref="op_ans_grd_100n"/>
+            <field name="line_id" ref="op_qz_ln_10"/>
+        </record>
+
+        <record id="op_qz_ln_10_cpp_q02_a04" model="op.quiz.answer">
+            <field name="name">Parameterized constructor</field>
+            <field name="grade_id" ref="op_ans_grd_100n"/>
+            <field name="line_id" ref="op_qz_ln_10"/>
+        </record>
+    </data>
+</odoo>

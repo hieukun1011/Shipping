@@ -1,0 +1,1080 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!--check login-->
+        <template id="auth_required" name="Login required for this quiz">
+            <t t-call="website.layout">
+                <div class="wrap">
+                    <div class="container">
+                        <div class="jumbotron mt32">
+                            <h1>Yêu cầu đăng nhập</h1>
+                            <p>Vui lòng truy cập liên kết <a
+                                    t-attf-href="/web/login?redirect=%2Fquiz%2Frules%2F#{slug(result)}"
+                                    style="color:blue;">
+                                Đăng nhập</a>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </template>
+
+        <!-- Over all result view -->
+        <template id="exam_user_result_profile" name="Exam Main View">
+            <t t-call="website.layout">
+                <div class="container mt32">
+                    <div class="col-md-12">
+                        <t t-call="openeducat_quiz.quiz_profile"/>
+                    </div>
+                    <div class="col-md-12">
+                        <table class="table table-bordered mt16">
+                            <thead>
+                                <tr>
+                                    <th>Exam Name</th>
+                                    <th>Total Question</th>
+                                    <th>Total Correct</th>
+                                    <th>Total Incorrect</th>
+                                    <th>Total Marks</th>
+                                    <th>Received Marks</th>
+                                    <th>Score</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t t-foreach="result_data" t-as="line">
+                                    <tr>
+                                        <td>
+                                            <t t-esc="line['name']"/>
+                                        </td>
+                                        <td>
+                                            <t t-esc="line['ttl_que']"/>
+                                        </td>
+                                        <td>
+                                            <t t-esc="line['ttl_crct']"/>
+                                        </td>
+                                        <td>
+                                            <t t-esc="line['ttl_incrct']"/>
+                                        </td>
+                                        <td>
+                                            <t t-esc="line['ttl_marks']"/>
+                                        </td>
+                                        <td>
+                                            <t t-esc="line['rec_marks']"/>
+                                        </td>
+                                        <td>
+                                            <t t-esc="line['score']"/>
+                                        </td>
+                                    </tr>
+                                </t>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </t>
+        </template>
+
+        <!-- Exam Main Page -->
+        <template id="online_exam_page" name="Exam Main View">
+            <t t-call="website.layout">
+
+                <t t-call="openeducat_quiz.quiz_render_exam_main_form_view"/>
+            </t>
+        </template>
+
+        <template id="quiz_render_exam_main_form_view" name="Exam View">
+            <div class="container mt32">
+                <div class="row d-flex" style="margin-bottom: 10%">
+                    <div class="col-xl-3">
+                        <t t-call="openeducat_quiz.quiz_profile"/>
+                    </div>
+                    <div class="col-xl-9">
+                        <div class="d-flex" style="justify-content: space-between;">
+                            <div style="color:#595A80;font-weight:500">Tất cả các kỳ thi</div>
+                            <div style="">
+                                <input type="text" id="searchKeyword" placeholder="Nhập từ khóa..."
+                                       style="padding: 5px; width: 200px; border: 1px solid #ccc; border-radius: 4px;"/>
+                                <button id="searchButton"
+                                        style="padding: 5px 10px; color: white; background-color: #595A80; border: none; border-radius: 4px; cursor: pointer;">
+                                    Tìm kiếm
+                                </button>
+                            </div>
+                        </div>
+                        <hr/>
+                        <div style="height: 100%;">
+                            <t t-if="exams_list">
+                                <input type="hidden" id="exams_data" name="exams_data" t-attf-value="#{exams_list}"/>
+                                <input type="hidden" id="quiz_attempt_data" name="quiz_attempt_data"
+                                       t-attf-value="#{quiz_attempt}"/>
+                                <div id="exam-container" style="display:flex;flex-wrap: wrap;">
+                                    <!-- Exam cards will be inserted here dynamically -->
+                                </div>
+                                <div id="pagination-controls" class="pagination" style="text-align: center;">
+                                    <!-- Pagination controls will be inserted here dynamically -->
+                                </div>
+                            </t>
+                            <t t-else="">
+                                <div style="display: flex;justify-content: center;align-items: center;">
+                                    "Hiện đang không có kỳ thi nào"
+                                </div>
+                            </t>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+
+        <template id="quiz_profile" name="Users Profile">
+            <div class="col-md-12" style="border: 1px solid #F8F8F8">
+                <center>
+                    <img t-attf-src="/web/image/res.partner/#{user.partner_id.id}/image_1920"
+                         class="img img-responsive img-circle"
+                         style="max-width: 250px;max-height: 250px;vertical-align: top;border: 1px solid #d8dadd;"/>
+                </center>
+                <h5 class="text-center" style="color:#595A80">
+                    <span t-esc="user.name"/>
+                </h5>
+            </div>
+            <div class="col-md-12" style="border: 1px solid #F8F8F8;background:#F7F6FB">
+                <div class="d-flex" style="justify-content: space-around;">
+                    <h6 style="color:#9B9D9D;">Tổng số lần cố gắng</h6>
+                    <span t-esc="total_exam"/>
+                </div>
+                <div class="d-flex" style="justify-content: space-around;">
+                    <h6 style="color:#9B9D9D;">Kết quả trung bình</h6>
+                    <span t-esc="progress">%</span>
+                </div>
+            </div>
+        </template>
+
+        <template id="quiz_render_form_view" name="Thi online">
+            <t t-call="website.layout">
+                <t t-call="openeducat_quiz.quiz_render_single_form_view"/>
+            </t>
+        </template>
+
+        <template id="divCounterTimer">
+            <div t-if="timer == 1" id="divCounter" class="text-center">
+                <span t-if="timer == 1" id="all_time" style="display:none;"/>
+                <span t-if="timer == 1" id="all_time" style="display:none;"/>
+                <center>
+                    <table>
+                        <tr>
+                            <th>
+                                <center>Giờ</center>
+                            </th>
+                            <th>
+                                <center>Phút</center>
+                            </th>
+                            <th>
+                                <center>Giây</center>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <center>
+                                    <span class="heading-digit" id="spanHr"
+                                          style="width:40px;"/>
+                                </center>
+                            </td>
+                            <td>
+                                <center>
+                                    <span class="heading-digit" id="spanMt"
+                                          style="width:40px;"/>
+                                </center>
+                            </td>
+                            <td>
+                                <center>
+                                    <span class="heading-digit" id="spanSn"
+                                          style="width:40px;"/>
+                                </center>
+                            </td>
+                        </tr>
+                    </table>
+                </center>
+                <!--<span class="heading-digit" id="spanHr"/>-->
+                <!--<span class="heading-digit" id="spanMt"/>-->
+                <!--<span class="heading-digit" id="spanSn"/>-->
+            </div>
+        </template>
+
+        <template id="quiz_starting_page">
+            <t t-call="website.layout">
+                <section>
+                    <div class="container">
+                        <div class="row mt-4 mb-4">
+                            <div class="col-md-12 text-center">
+                                <center>
+                                    <h1>
+                                        <t t-esc="exam.name"/>
+                                    </h1>
+                                </center>
+                            </div>
+                            <div class="col-md-12 text-center">
+                                <center>
+                                    <t t-esc="user.name"/>
+                                </center>
+                            </div>
+                            <div class="col-md-12" t-if="exam.quiz_audio and audio">
+                                <center>
+                                    <h3>Please hear the audio before start exam</h3>
+                                </center>
+                                <span t-raw="audio"/>
+                            </div>
+                            <div class="col-md-12" t-if="exam.quiz_video and video">
+                                <center>
+                                    <h3>Please see the video before start exam</h3>
+                                </center>
+                                <span t-raw="video"/>
+                            </div>
+                            <div class="col-md-12" t-if="exam.quiz_html and html">
+                                <span t-raw="exam.quiz_html"/>
+                            </div>
+                            <br/>
+                            <div class="col text-center">
+                                <a t-if="single_page == 0" class="btn btn-primary btn-lg quiz_prv"
+                                   t-attf-href="/quiz/attempt/#{slug(result)}">
+                                    Bắt đầu thi
+                                </a>
+                                <a t-if="single_page == 1" class="btn btn-primary btn-lg quiz_prv"
+                                   t-attf-href="/quiz/#{slug(result)}">
+                                    Bắt đầu thi
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </t>
+        </template>
+
+        <template id="quiz_warning_page">
+            <t t-call="website.layout">
+                <section>
+                    <div class="container">
+                        <div class="row mt-4 mb-4">
+                            <div class="col-md-12 text-center">
+                                <center>
+                                    <h1>
+                                        Không gian lận trong thi cử
+                                    </h1>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </t>
+        </template>
+
+        <template id="quiz_error_page">
+            <t t-call="website.layout">
+                <section>
+                    <div class="container">
+                        <div class="row mt-4 mb-4">
+                            <div class="col-md-12 text-center">
+                                <center>
+                                    <h1>
+                                        Bạn không nằm trong danh sách thí sinh
+                                    </h1>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </t>
+        </template>
+
+        <template id="timber_config">
+            <div id="divCounter" class="text-center">
+                <span id="all_time" style="display:none;"/>
+                <span id="all_time" style="display:none;"/>
+                <center>
+                    <div class="d-flex" style="justify-content: center;">
+                        <div class="d-grid">
+                            <center>Giờ</center>
+                            <center>
+                                <span class="heading-digit" id="spanHr"
+                                      style="width:40px;"/>
+                            </center>
+                        </div>
+                        <div class="d-grid">
+                            <center>Phút</center>
+                            <center>
+                                <span class="heading-digit" id="spanMt"
+                                      style="width:40px;"/>
+                            </center>
+                        </div>
+                        <div class="d-grid">
+                            <center>Giây</center>
+                            <center>
+                                <span class="heading-digit" id="spanSn"
+                                      style="width:40px;"/>
+                            </center>
+                        </div>
+                    </div>
+                </center>
+            </div>
+        </template>
+
+
+        <template id="quiz_render_single_form_view">
+            <form action="/quiz/attempt/record" method="post" class="form-horizontal mt32 mb32" id="from_quiz_dynamic">
+                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                <a id="submit_exam" t-attf-href="/quiz/submit/#{slug(line.result_id)}" style="display: none;"></a>
+                <input type="hidden" id="time_hr" name="time_hr" t-attf-value="#{time_hr}"/>
+                <input type="hidden" id="time_minute" name="time_minute" t-attf-value="#{time_minute}"/>
+                <input type="hidden" id="time_spent_hr" name="time_spent_hr" t-attf-value="#{time_spent_hr}"/>
+                <input type="hidden" id="time_spent_minute" name="time_spent_minute"
+                       t-attf-value="#{time_spent_minute}"/>
+                <input type="hidden" id="time_spent_second" name="time_spent_second"
+                       t-attf-value="#{time_spent_second}"/>
+                <div class="container">
+                    <div class="col-xl-12" style="text-align: center; width:100%">
+                        <h1 class="text-center">
+                            <t t-esc="exam.name"/>
+                        </h1>
+                        <h2 class="text-center">
+                            <t t-esc="user.name"/>
+                        </h2>
+                    </div>
+                    <div class="d-flex col-xl-12">
+                        <div style="width:78%;padding:15px 15px 15px 15px;border: 1px solid #DCDBDF">
+                            <div class="mt16 mb16">
+                                <!--                                <center>-->
+                                <!--                                    <t t-raw="exam.quiz_html"/>-->
+                                <!--                                    <t t-raw="exam.quiz_audio"/>-->
+                                <!--                                    <t t-raw="exam.quiz_video"/>-->
+                                <!--                                </center>-->
+                            </div>
+                            <!--                    <div class="row">-->
+                            <!--                    <div class="col-md-9">-->
+                            <div class="form-group">
+                                <h2>Câu<t t-esc="question_no"/>.
+                                    <div>
+                                        <t t-raw="line.name"/>
+                                    </div>
+                                </h2>
+                                <!--                        <h2><t t-raw="question_no"/>.-->
+                                <!--                            <t t-raw="line.name"/>-->
+                                <!--                        </h2>-->
+                                <input type="hidden" t-attf-name="question" t-att-value="line.id"/>
+                                <t t-if="attachment">
+                                    <span t-raw="attachment"/>
+                                </t>
+                                <t t-if="line.que_type == 'blank'">
+                                    <t t-if="is_required ==  1">
+                                        <input t-if="is_readonly == 1" type="text" t-attf-name="answer"
+                                               t-attf-value="#{line.given_answer}" style="width: 50%;"
+                                               required="True"
+                                               disabled="true"/>
+                                        <input t-if="is_readonly == 0" type="text" t-attf-name="answer"
+                                               t-attf-value="#{line.given_answer}" style="width: 50%;"
+                                               required="True"/>
+                                    </t>
+                                    <t t-if="is_required ==  0">
+                                        <input t-if="is_readonly == 1" type="text" t-attf-name="answer"
+                                               t-attf-value="#{line.given_answer}" style="width: 50%;"
+                                               disabled="true"/>
+                                        <input t-if="is_readonly == 0" type="text" t-attf-name="answer"
+                                               t-attf-value="#{line.given_answer}" style="width: 50%;"/>
+                                    </t>
+                                </t>
+                                <t t-if="line.que_type == 'optional'">
+                                    <section class="row">
+                                        <t t-if="is_required == 1 and is_readonly == 1" t-foreach="line.line_ids"
+                                           t-as="option">
+                                            <div class="col-md-3 col-sm-6">
+                                                <label>
+                                                    <input t-if="option.id == given_answer"
+                                                           checked="checked" type="radio"
+                                                           t-attf-name="answer"
+                                                           t-att-id="'que%sopt%s'%(line.id,option.id)"
+                                                           t-attf-value="#{option.id}"
+                                                           required="true" disabled="true"/>
+                                                    <t t-if="option.id == given_answer" t-raw="option.name"/>
+                                                    <input t-if="option.id != given_answer"
+                                                           type="radio" t-attf-name="answer"
+                                                           t-att-id="'que%sopt%s'%(line.id,option.id)"
+                                                           t-attf-value="#{option.id}"
+                                                           required="true" disabled="true"/>
+                                                    <t t-if="option.id != given_answer" t-raw="option.name"/>
+                                                </label>
+                                                <br/>
+                                            </div>
+                                        </t>
+                                        <t t-if="is_required == 1 and is_readonly == 0"
+                                           t-foreach="line.line_ids" t-as="option">
+                                            <div class="col-md-3 col-sm-6">
+                                                <label>
+                                                    <input t-if="option.id == given_answer"
+                                                           checked="checked" type="radio"
+                                                           t-attf-name="answer"
+                                                           t-att-id="'que%sopt%s'%(line.id,option.id)"
+                                                           t-attf-value="#{option.id}"
+                                                           required="true"/>
+                                                    <t t-if="option.id == given_answer" t-raw="option.name"/>
+                                                    <input t-if="option.id != given_answer"
+                                                           type="radio" t-attf-name="answer"
+                                                           t-att-id="'que%sopt%s'%(line.id,option.id)"
+                                                           t-attf-value="#{option.id}"
+                                                           required="true"/>
+                                                    <t t-if="option.id != given_answer" t-raw="option.name"/>
+                                                </label>
+                                            </div>
+                                            <br/>
+                                        </t>
+                                        <t t-if="is_required == 0 and is_readonly == 1"
+                                           t-foreach="line.line_ids" t-as="option">
+                                            <div class="col-md-3 col-sm-6">
+                                                <label>
+                                                    <input t-if="option.id == given_answer"
+                                                           checked="checked" type="radio"
+                                                           t-attf-name="answer"
+                                                           t-att-id="'que%sopt%s'%(line.id,option.id)"
+                                                           t-attf-value="#{option.id}"
+                                                           disabled="true"/>
+                                                    <t t-if="option.id == given_answer" t-raw="option.name"/>
+                                                    <input t-if="option.id != given_answer"
+                                                           type="radio" t-attf-name="answer"
+                                                           t-att-id="'que%sopt%s'%(line.id,option.id)"
+                                                           t-attf-value="#{option.id}"
+                                                           disabled="true"/>
+                                                    <t t-if="option.id != given_answer" t-raw="option.name"/>
+                                                </label>
+                                                <br/>
+                                            </div>
+                                        </t>
+                                        <t t-if="is_readonly == 0 and is_required == 0" t-foreach="line.line_ids"
+                                           t-as="option">
+                                            <div class="col-md-3 col-sm-6">
+                                                <label>
+                                                    <input t-if="option.id == given_answer"
+                                                           checked="checked" type="radio"
+                                                           t-attf-name="answer"
+                                                           t-att-id="'que%sopt%s'%(line.id,option.id)"
+                                                           t-attf-value="#{option.id}"/>
+                                                    <t t-if="option.id == given_answer" t-raw="option.name"/>
+                                                    <input t-if="option.id != given_answer"
+                                                           type="radio" t-attf-name="answer"
+                                                           t-att-id="'que%sopt%s'%(line.id,option.id)"
+                                                           t-attf-value="#{option.id}"/>
+                                                    <t t-if="option.id != given_answer" t-raw="option.name"/>
+                                                </label>
+                                            </div>
+                                            <br/>
+                                        </t>
+                                    </section>
+                                </t>
+                                <t t-if="line.que_type == 'descriptive'">
+                                    <t t-if="is_required ==  1">
+                                        <textarea t-if="is_readonly == 1" type="textarea" rows="8"
+                                                  style="width:100%;"
+                                                  t-attf-name="answer" t-attf-value="#{line.given_answer}"
+                                                  required="True"
+                                                  disabled="true"/>
+                                        <textarea t-if="is_readonly == 0" type="textarea" rows="8"
+                                                  style="width:100%;"
+                                                  t-attf-name="answer" t-attf-value="#{line.given_answer}"
+                                                  required="True"/>
+                                    </t>
+                                    <t t-if="is_required ==  0">
+                                        <textarea t-if="is_readonly == 1" type="textarea" rows="8"
+                                                  style="width:100%;"
+                                                  t-attf-name="answer" t-attf-value="#{line.given_answer}"
+                                                  disabled="true"/>
+                                        <textarea t-if="is_readonly == 0" type="textarea" rows="8"
+                                                  style="width:100%;"
+                                                  t-attf-name="answer" t-attf-value="#{line.given_answer}"/>
+                                    </t>
+                                </t>
+                            </div>
+                            <div class="col-md-7 col-sm-8">
+                                <input type="hidden" name="ExamID" t-attf-value="#{exam.id}"/>
+                            </div>
+                        </div>
+                        <div class="col-md-3" style="margin-left:2%">
+                            <div style="padding: 10px; background-color: #CCCCCC">
+                                <div class="col-md-12 mb32" style="background-color: #FFFFFF">
+                                    <div t-if="timer == 1">
+                                        <t t-call="openeducat_quiz.timber_config"></t>
+                                        <!--<span class="heading-digit" id="spanHr"/>-->
+                                        <!--<span class="heading-digit" id="spanMt"/>-->
+                                        <!--<span class="heading-digit" id="spanSn"/>-->
+                                    </div>
+                                    <hr/>
+                                    <center>
+                                        <h4 class="mb16">Bảng câu hỏi</h4>
+                                    </center>
+                                    <div style="padding:10px 10px 10px 10px">
+                                        <t t-foreach="grid_data" t-as="grid_val">
+                                            <a t-attf-href="#"
+                                               t-if="grid_val['is_ans_given'] == 1 and grid_val['is_readonly'] == 1 and grid_val['current_id'] == 0">
+                                                <div class="btn btn-default col-2 btn-number"
+                                                     disabled="true"
+                                                     style="background-color: #4CAF50;">
+                                                    <span t-esc="grid_val['que_no']"/>
+                                                </div>
+                                            </a>
+                                            <a t-attf-href="/quiz/attempt/#{slug(line.result_id)}/question/#{slug(grid_val['line'])}"
+                                               t-if="grid_val['is_ans_given'] == 1 and grid_val['is_readonly'] == 0 and grid_val['current_id'] == 0">
+                                                <div class="btn btn-default col-2 btn-number"
+                                                     style="background-color: #4CAF50;">
+                                                    <span t-esc="grid_val['que_no']"/>
+                                                </div>
+                                            </a>
+                                            <a t-attf-href="/quiz/attempt/#{slug(line.result_id)}/question/#{slug(grid_val['line'])}"
+                                               t-if="grid_val['is_ans_given'] == 0 and grid_val['is_readonly'] == 0 and grid_val['current_id'] == 0">
+                                                <div class="btn btn-default col-2 btn-number">
+                                                    <span t-esc="grid_val['que_no']"/>
+                                                </div>
+                                            </a>
+                                            <a t-attf-href="#"
+                                               t-if="grid_val['is_ans_given'] == 0 and grid_val['is_readonly'] == 1 and grid_val['current_id'] == 0">
+                                                <div class="btn btn-default col-2 btn-number"
+                                                     disabled="true">
+                                                    <span t-esc="grid_val['que_no']"/>
+                                                </div>
+                                            </a>
+                                            <a t-attf-href="/quiz/attempt/#{slug(line.result_id)}/question/#{slug(grid_val['line'])}"
+                                               t-if="grid_val['current_id'] == 1">
+                                                <div class="btn btn-default col-2 btn-number"
+                                                     style="background-color: #357EBD;">
+                                                    <span t-esc="grid_val['que_no']"/>
+                                                </div>
+                                            </a>
+                                        </t>
+                                    </div>
+                                    <div style="padding:10px 10px 10px 10px">
+                                        <div class="col-md-12">
+                                            <span class="progress-value" t-raw="progress"/>
+                                            <hr/>
+                                            <div id="progressBar">
+                                                <div style="progress-bar-color">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12">
+                        <button t-if="prev_allow == 1 and timer == 0"
+                                class="quiz_finish1"
+                                t-attf-href="/quiz/attempt/#{slug(line.result_id)}/question/#{slug(prev_result)}">
+                            Prev
+                        </button>
+                        <button t-if="prev_allow == 1 and timer == 1" id="prev_timer"
+                                class="quiz_finish1"
+                                t-attf-href="/quiz/attempt/#{slug(line.result_id)}/question/#{slug(prev_result)}/prev/">
+                            Prev
+                        </button>
+                        <button t-if="next_allow == 1" class="quiz_finish1">Tiếp theo
+                        </button>
+                        <button id="final_finish" t-if="next_allow == 0"
+                                class="quiz_finish1 end">
+                            Kết thúc
+                        </button>
+                    </div>
+                </div>
+                <!--                </div>-->
+            </form>
+        </template>
+
+        <template id="quiz_web_page" name="Quiz Questions">
+            <t t-call="website.layout">
+                <form action="/quiz/results" method="post" class="form-horizontal mt32" id="from_quiz">
+                    <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                    <input type="hidden" id="time_hr" name="time_hr" t-attf-value="#{time_hr}"/>
+                    <input type="hidden" id="time_minute" name="time_minute" t-attf-value="#{time_minute}"/>
+                    <input type="hidden" id="time_spent_hr" name="time_spent_hr" t-attf-value="#{time_spent_hr}"/>
+                    <input type="hidden" id="time_spent_minute" name="time_spent_minute"
+                           t-attf-value="#{time_spent_minute}"/>
+                    <input type="hidden" id="time_spent_second" name="time_spent_second"
+                           t-attf-value="#{time_spent_second}"/>
+                    <div class="wrap">
+                        <div class="container">
+                            <div class="row mt-4 mb-4">
+                                <div>
+                                    <center>
+                                        <h1>
+                                            <t t-esc="exam.name"/>
+                                        </h1>
+                                        <t t-raw="exam.quiz_html"/>
+                                    </center>
+                                </div>
+                                <!--                            <div class="col-md-12" t-if="exam.quiz_audio and audio">-->
+                                <!--                                <center><h3>Please hear the audio before start exam</h3></center>-->
+                                <!--                                <span t-raw="audio"/>-->
+                                <!--                            </div>-->
+                                <!--                            <div class="col-md-12" t-if="exam.quiz_video and video">-->
+                                <!--                                <center><h3>Please see the video before start exam</h3></center>-->
+                                <!--                                <span t-raw="video"/>-->
+                                <!--                            </div>-->
+                                <!--                            <div class="col-md-12" t-if="exam.quiz_html and html">-->
+                                <!--                                <span t-raw="exam.quiz_html"/>-->
+                                <!--                            </div><br/>-->
+                                <!--                                <t t-if="exam.quiz_html and html">-->
+                                <!--                                    <t t-raw="exam.quiz_html"/>-->
+                                <!--                                </t>-->
+                            </div>
+                            <div class="d-flex">
+                                <div style="width:78%;padding:15px 15px 15px 15px;border: 1px solid #DCDBDF">
+                                    <t t-foreach="result.line_ids" t-as="question">
+                                        <div class="form-group">
+                                            <h2><t t-raw="question_index + 1"/>.
+                                                <div t-raw="question.name"/>
+                                            </h2>
+                                            <section class="row">
+                                                <t t-if="question.attachment">
+                                                    <t t-if="question.material_type == 'video'">
+                                                        <video controls="" controlslist="nodownload">
+                                                            <source t-attf-src="data:video/mp4;base64,#{question.attachment}"/>
+                                                        </video>
+                                                    </t>
+                                                    <t t-if="question.material_type == 'audio'">
+                                                        <audio controls="" controlslist="nodownload">
+                                                            <source t-attf-src="data:audio/mpeg;base64,#{question.attachment}"/>
+                                                        </audio>
+                                                    </t>
+                                                    <t t-if="question.material_type == 'document'">
+                                                        <div class="pdf-container">
+                                                            <iframe class="pdf-embed"
+                                                                    t-attf-src="data:application/pdf;base64,#{question.attachment}"></iframe>
+                                                        </div>
+                                                    </t>
+                                                    <t t-if="question.material_type == 'infographic'">
+                                                        <img class="col-md-12"
+                                                             t-attf-src="data:image/png;base64,#{question.attachment}"></img>
+                                                    </t>
+                                                </t>
+                                                <t t-if="question.document_url">
+                                                    <iframe class="col-md-12" style="height: 500px;"
+                                                            t-attf-src="https://www.youtube.com/embed/#{question.document_url.split('v=')[1].split('&amp;')[0]}#{'&amp;start=' + question.document_url.split('&amp;t=')[1] if '&amp;t=' in question.document_url else ''}"></iframe>
+
+                                                    <!--                                                    <iframe t-attf-src="https://www.youtube.com/embed/#{question.document_url}"></iframe>-->
+                                                </t>
+
+                                                <t t-if="question.que_type == 'optional'">
+                                                    <t t-foreach="question.line_ids" t-as="option">
+                                                        <div class="col-md-3 col-sm-6">
+                                                            <input type="radio"
+                                                                   t-attf-name="question#{question.id}"
+                                                                   t-att-id="'que%sopt%s'%(question.id,option.id)"
+                                                                   t-attf-value="#{option.id}"/>
+                                                            <t t-raw="option.name"/>
+                                                        </div>
+                                                        <br/>
+                                                    </t>
+                                                </t>
+                                            </section>
+                                            <t t-if="question.que_type == 'blank'">
+                                                <input type="text" t-attf-name="blank#{question.id}"
+                                                       style="width: 50%;"/>
+                                            </t>
+                                            <t t-if="question.que_type == 'descriptive'">
+                                                <textarea type="textarea" t-attf-name="descriptive#{question.id}"
+                                                          rows="8"
+                                                          style="width:100%;"/>
+                                            </t>
+                                        </div>
+                                    </t>
+                                    <div class="form-group">
+                                        <div class="col-md-7 col-sm-8">
+                                            <input type="hidden" name="ExamID" t-attf-value="#{result.id}"/>
+                                            <button class="btn btn-primary btn-lg quiz_finish">Finish</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3" style="margin-left:2%">
+                                    <div style="padding: 10px; background-color: #CCCCCC">
+                                        <div class="col-md-12 mb32" style="background-color: #FFFFFF">
+                                            <div t-if="exam.time_config">
+                                                <t t-call="openeducat_quiz.timber_config"></t>
+                                            </div>
+                                            <hr/>
+                                            <center>
+                                                <h4 class="mb16">Bảng câu hỏi</h4>
+                                            </center>
+                                            <div style="padding:10px 10px 10px 10px">
+                                                <t t-foreach="grid_data" t-as="grid_val">
+                                                    <a t-attf-href="#"
+                                                       t-if="grid_val['is_ans_given'] == 1 and grid_val['is_readonly'] == 1 and grid_val['current_id'] == 0">
+                                                        <div class="btn btn-default col-2 btn-number"
+                                                             disabled="true"
+                                                             style="background-color: #4CAF50;">
+                                                            <span t-esc="grid_val['que_no']"/>
+                                                        </div>
+                                                    </a>
+                                                    <a t-attf-href="/quiz/attempt/#{slug(line.result_id)}/question/#{slug(grid_val['line'])}"
+                                                       t-if="grid_val['is_ans_given'] == 1 and grid_val['is_readonly'] == 0 and grid_val['current_id'] == 0">
+                                                        <div class="btn btn-default col-2 btn-number"
+                                                             style="background-color: #4CAF50;">
+                                                            <span t-esc="grid_val['que_no']"/>
+                                                        </div>
+                                                    </a>
+                                                    <a t-attf-href="/quiz/attempt/#{slug(line.result_id)}/question/#{slug(grid_val['line'])}"
+                                                       t-if="grid_val['is_ans_given'] == 0 and grid_val['is_readonly'] == 0 and grid_val['current_id'] == 0">
+                                                        <div class="btn btn-default col-2 btn-number">
+                                                            <span t-esc="grid_val['que_no']"/>
+                                                        </div>
+                                                    </a>
+                                                    <a t-attf-href="#"
+                                                       t-if="grid_val['is_ans_given'] == 0 and grid_val['is_readonly'] == 1 and grid_val['current_id'] == 0">
+                                                        <div class="btn btn-default col-2 btn-number"
+                                                             disabled="true">
+                                                            <span t-esc="grid_val['que_no']"/>
+                                                        </div>
+                                                    </a>
+                                                    <a t-attf-href="/quiz/attempt/#{slug(line.result_id)}/question/#{slug(grid_val['line'])}"
+                                                       t-if="grid_val['current_id'] == 1">
+                                                        <div class="btn btn-default col-2 btn-number"
+                                                             style="background-color: #357EBD;">
+                                                            <span t-esc="grid_val['que_no']"/>
+                                                        </div>
+                                                    </a>
+                                                </t>
+                                            </div>
+                                            <div style="padding:10px 10px 10px 10px">
+                                                <div class="col-md-12">
+                                                    <span class="progress-value" t-raw="progress"/>
+                                                    <hr/>
+                                                    <div id="progressBar">
+                                                        <div style="progress-bar-color">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </t>
+        </template>
+
+        <template id="quiz_web_page_single" name="Quiz Questions">
+            <t t-call="website.layout">
+                <t t-call="openeducat_quiz.quiz_web_page_single_form"/>
+            </t>
+        </template>
+
+        <template id="quiz_web_page_single_form" name="Quiz Questions Form View">
+            <form action="/quiz/results" method="post" class="form-horizontal mt32" id="from_quiz">
+                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                <div class="wrap">
+                    <div class="container">
+                        <div class="mt16 mb16">
+                            <h1 class="text-center">
+                                <t t-esc="exam.name"/>
+                            </h1>
+                        </div>
+                        <div id="quiz_err_info"/>
+                        <div class="row">
+                            <div class="col-md-3"></div>
+                            <div class="col-md-6 p-3 text-center" style="border: 1px solid;">
+                                <center>
+                                    <h4>Bảng câu</h4>
+                                </center>
+                                <t t-foreach="result.line_ids" t-as="question">
+                                    <div t-att-class="'btn btn-default col-2 que_grid que_active' if question_index == 0 else 'btn btn-default col-2 que_grid'"
+                                         t-att-grid-index-id="'%s' % (question_index)">
+                                        <span t-esc="question_index + 1"/>
+                                    </div>
+                                </t>
+                            </div>
+                            <div class="col-md-3"></div>
+                            <div class="col-md-12">
+                                <t t-foreach="result.line_ids" t-as="question">
+                                    <div t-if="question_index == 0">
+                                        <t t-call="openeducat_quiz.quiz_first_question"/>
+                                    </div>
+                                    <div t-if="question_index != 0 and question_index != (total_question - 1)">
+                                        <t t-call="openeducat_quiz.quiz_middle_question"/>
+                                    </div>
+                                    <div t-if="question_index == (total_question - 1)">
+                                        <t t-call="openeducat_quiz.quiz_last_question"/>
+                                    </div>
+                                </t>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </template>
+
+        <template id="quiz_first_question" name="quiz_first_question">
+            <div class="form-group que_show question" style="font-size: 20px;" t-att-index-id="'%s' % (question_index)">
+                <h2><t t-field="question_index + 1"/>.
+                    <div t-field="question"/>
+                </h2>
+                <t t-foreach="question.line_ids" t-as="option">
+                    <div class="col-md-12 col-sm-12">
+                        <input type="radio" t-attf-name="question#{question.id}"
+                               t-att-id="'que%sopt%s'%(question.id,option.id)"
+                               t-attf-value="#{option.id}"/>
+                        <t t-raw="option.name"/>
+                    </div>
+                    <br/>
+                </t>
+                <a class="btn btn-primary btn-lg quiz_nxt" t-att-next-id="'%s' % (question_index + 1)" align="right">
+                    Next
+                </a>
+            </div>
+        </template>
+
+        <template id="quiz_middle_question" name="quiz_middle_question">
+            <div class="form-group que_hide question" style="font-size: 20px;" t-att-index-id="'%s' % (question_index)">
+                <h2><t t-field="question_index + 1"/>.
+                    <div t-field="question"/>
+                </h2>
+                <t t-foreach="question.line_ids" t-as="option">
+                    <div class="col-md-12 col-sm-12">
+                        <input type="radio" t-attf-name="question#{question.id}"
+                               t-att-id="'que%sopt%s'%(question.id,option.id)"
+                               t-attf-value="#{option.id}"/>
+                        <t t-raw="option.name"/>
+                    </div>
+                    <br/>
+                </t>
+                <a class="btn btn-primary btn-lg quiz_prv" t-att-prev-id="'%s' % (question_index - 1)" align="left">
+                    Prev
+                </a>
+                <a class="btn btn-primary btn-lg quiz_nxt" t-att-next-id="'%s' % (question_index + 1)" align="right">
+                    Next
+                </a>
+            </div>
+        </template>
+
+        <template id="quiz_last_question" name="quiz_last_question">
+            <div class="form-group que_hide question" style="font-size: 20px;" t-att-index-id="'%s' % (question_index)">
+                <h2><t t-field="question_index + 1"/>.
+                    <div t-field="question"/>
+                </h2>
+                <t t-foreach="question.line_ids" t-as="option">
+                    <div class="col-md-12 col-sm-12">
+                        <input type="radio" t-attf-name="question#{question.id}"
+                               t-att-id="'que%sopt%s'%(question.id,option.id)"
+                               t-attf-value="#{option.id}"/>
+                        <t t-raw="option.name"/>
+                    </div>
+
+                    <br/>
+                </t>
+                <div>
+                    <a class="btn btn-primary btn-lg quiz_prv" t-att-prev-id="'%s' % (question_index - 1)">Prev</a>
+                    <button class="btn btn-primary btn-lg quiz_finish">
+                        <input type="hidden" name="ExamID" t-attf-value="#{result.id}"/>
+                        Finish
+                    </button>
+                </div>
+            </div>
+        </template>
+
+        <template id="quiz_completed" name="Quiz Completed">
+            <t t-call="website.layout">
+                <div class="wrap">
+                    <div class="container">
+                        <center>
+                            <h1>Thank you for Quiz</h1>
+                        </center>
+                        <center>
+                            <h2>Your answers are recorded</h2>
+                        </center>
+                    </div>
+                </div>
+            </t>
+        </template>
+
+        <template id="quiz_results" name="Quiz Results">
+            <t t-call="website.layout">
+                <t t-call="openeducat_quiz.quiz_results_form"/>
+            </t>
+        </template>
+
+        <template id="quiz_results_form" name="Quiz Results Form">
+            <div class="wrap">
+                <div class="container">
+                    <div class="mt16 mb16">
+                        <h1 class="text-center">Kết quả</h1>
+                        <!--                         <h3 class="text-center">-->
+                        <!--                            <t t-esc="user.name"/>-->
+                        <!--                        </h3>-->
+                    </div>
+                    <div class="mt16 mb16">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <center>Số câu</center>
+                                    </th>
+                                    <th>
+                                        <center>Đúng</center>
+                                    </th>
+                                    <th>
+                                        <center>Sai</center>
+                                    </th>
+                                    <th>
+                                        <center>Điểm</center>
+                                    </th>
+                                    <th>
+                                        <center>Kết quả</center>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <center>
+                                            <t t-esc="total_question"/>
+                                        </center>
+                                    </td>
+                                    <td>
+                                        <center>
+                                            <t t-esc="total_correct"/>
+                                        </center>
+                                    </td>
+                                    <td>
+                                        <center>
+                                            <t t-esc="total_incorrect"/>
+                                        </center>
+                                    </td>
+                                    <td>
+                                        <center>
+                                            <t t-esc="received_marks"/>/
+                                            <t t-esc="total_marks"/>
+                                        </center>
+                                    </td>
+                                    <td>
+                                        <center><t t-esc="percentage"/>%
+                                        </center>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <t t-if="is_message == 1">
+                            <span t-raw="message" class="mb16"/>
+                        </t>
+                        <div t-if="display_wrong_ans == 1">
+                            <div class="mt16 mb16">
+                                <h1 class="text-center">Wrongly Given Answers</h1>
+                            </div>
+                            <t>
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th style="background-color: 'green';">
+                                                <center>Question</center>
+                                            </th>
+                                            <th>
+                                                <center>Given Answer</center>
+                                            </th>
+                                            <th>
+                                                <center>Original Answer</center>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <t t-foreach="wrong_answer" t-as="answer">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <center>
+                                                        <t t-esc="answer['question']"/>
+                                                    </center>
+                                                </td>
+                                                <td>
+                                                    <center>
+                                                        <t t-esc="answer['given_answer']"/>
+                                                    </center>
+                                                </td>
+                                                <td>
+                                                    <center>
+                                                        <t t-esc="answer['answer']"/>
+                                                    </center>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </t>
+                                </table>
+                            </t>
+                        </div>
+                        <div t-if="not_attempt_ans == 1">
+                            <div class="mt16 mb16">
+                                <h1 class="text-center">Not Attempt Answers</h1>
+                            </div>
+                            <t>
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th style="background-color: 'green';">
+                                                <center>Question</center>
+                                            </th>
+                                            <th>
+                                                <center>Answer</center>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <t t-foreach="not_attempt_answer" t-as="answer">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <center>
+                                                        <t t-esc="answer['question']"/>
+                                                    </center>
+                                                </td>
+                                                <td>
+                                                    <center>
+                                                        <t t-esc="answer['answer']"/>
+                                                    </center>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </t>
+                                </table>
+                            </t>
+                        </div>
+                        <div t-if="display_true_ans == 1">
+                            <div class="mt16 mb16">
+                                <h1 class="text-center">Truly Given Answers</h1>
+                            </div>
+                            <t>
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th style="background-color: 'green';">
+                                                <center>Question</center>
+                                            </th>
+                                            <th>
+                                                <center>Answer</center>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <t t-foreach="right_answers" t-as="answer">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <center>
+                                                        <t t-esc="answer['question']"/>
+                                                    </center>
+                                                </td>
+                                                <td>
+                                                    <center>
+                                                        <t t-esc="answer['answer']"/>
+                                                    </center>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </t>
+                                </table>
+                            </t>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a role="button" class="btn btn-primary btn-lg" href="/online-exams">
+                        Kết thúc
+                    </a>
+                </div>
+            </div>
+        </template>
+    </data>
+</odoo>

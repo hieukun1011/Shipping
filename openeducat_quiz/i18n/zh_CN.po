@@ -1,0 +1,1060 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: openeducaterp\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-12-12 06:07+0000\n"
+"PO-Revision-Date: 2018-04-13 01:55-0400\n"
+"Last-Translator: Shau_4594 <shaunakamin099@gmail.com>\n"
+"Language-Team: Chinese Simplified\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: crowdin.com\n"
+"X-Crowdin-Project: openeducaterp\n"
+"X-Crowdin-Language: zh-CN\n"
+"X-Crowdin-File: /master/openeducat_quiz/i18n/openeducat_quiz.pot\n"
+"Language: zh_CN\n"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_profile
+msgid "<b>Total Attempt</b> :"
+msgstr "<b>总尝试</b>:"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_question_mark
+msgid "Actual Marks"
+msgstr "实际标记"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_que_required
+msgid "All Question are Required"
+msgstr "所有问题都需要"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_answer_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line_answer
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_answer_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line_answer
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_answers_name
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+msgid "Answer"
+msgstr "回答"
+
+#. module: openeducat_quiz
+#: model:ir.model,name:openeducat_quiz.model_op_quiz_answer
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line_line_ids
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_line_ids
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_form
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Answers"
+msgstr "答案"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_render_exam_main_form_view
+msgid "Attempt :"
+msgstr "尝试："
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.my_result
+msgid "Attempt Date"
+msgstr "尝试日期"
+
+#. module: openeducat_quiz
+#: selection:op.quiz,time_expire:0
+msgid "Attempts must be submitted before time expires, or they are not counted"
+msgstr "必须在时间过期之前提交尝试, 否则不计算"
+
+#. module: openeducat_quiz
+#: selection:op.quiz,start_view:0
+msgid "Audio"
+msgstr "音频"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_quiz_audio
+msgid "Audio File"
+msgstr "音频文件"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_profile
+msgid "Average Result"
+msgstr "平均结果"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_render_exam_main_form_view
+msgid "Avg Result :"
+msgstr "平均结果:"
+
+#. module: openeducat_quiz
+#: code:addons/openeducat_quiz/models/result.py:306
+#, python-format
+msgid "Can not set more then actual mark."
+msgstr "无法设置更多的实际标记。"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_question_wizard_form
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_update_mark_wizard_form
+#: selection:op.quiz,state:0
+#: selection:op.quiz.result,state:0
+msgid "Cancel"
+msgstr "取消"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line_case_sensitive
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line_case_sensitive
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_case_sensitive
+msgid "Case Sensitive"
+msgstr "区分大小写"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_categ_id
+msgid "Category"
+msgstr "类别"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_challenge_ids
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Challenges"
+msgstr "挑战"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Closed"
+msgstr "关闭"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_category_code
+msgid "Code"
+msgstr "代码"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_config_ids
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_quiz_config
+#: model:ir.ui.menu,name:openeducat_quiz.op_quiz_config_menu
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Configuration"
+msgstr "配置"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_question_wizard_form
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_update_mark_wizard_form
+msgid "Confirm"
+msgstr "确认"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_answer
+msgid "Correct Answer"
+msgstr "正确答案"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_answer_grade_create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_answer_create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line_create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_type_create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_wizard_create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_answer_create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_category_create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_config_create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line_create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_answers_create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_message_create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_update_mark_create_uid
+msgid "Created by"
+msgstr "创建者"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_answer_grade_create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_answer_create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line_create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_type_create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_wizard_create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_answer_create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_category_create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_config_create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line_create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_answers_create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_message_create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_update_mark_create_date
+msgid "Created on"
+msgstr "创建于"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_description
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_type_description
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_category_description
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_form
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Description"
+msgstr "描述"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_form
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_type_form
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_category_form
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Description..."
+msgstr "描述。。。"
+
+#. module: openeducat_quiz
+#: selection:op.question.bank.line,que_type:0
+#: selection:op.quiz.line,que_type:0
+#: selection:op.quiz.result.line,que_type:0
+msgid "Descriptive"
+msgstr "描述"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_answer_grade_display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_answer_display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line_display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_type_display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_wizard_display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_answer_display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_category_display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_config_display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line_display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_answers_display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_message_display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_update_mark_display_name
+msgid "Display Name"
+msgstr "显示名称"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_not_attempt_ans
+msgid "Display Not Attempted Answer"
+msgstr "显示未尝试的答案"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_show_result
+msgid "Display Result"
+msgstr "显示结果"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_right_ans
+msgid "Display Right Answer"
+msgstr "显示正确答案"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_wrong_ans
+msgid "Display Wrong Answer"
+msgstr "显示错误答案"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_result_form
+#: selection:op.quiz,state:0
+#: selection:op.quiz.result,state:0
+msgid "Done"
+msgstr "做"
+
+#. module: openeducat_quiz
+#: selection:op.quiz,state:0
+msgid "Draft"
+msgstr "草案"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.exam_user_result_profile
+#: model:ir.ui.view,arch_db:openeducat_quiz.my_result
+msgid "Exam Name"
+msgstr "考试名称"
+
+#. module: openeducat_quiz
+#: model:website.menu,name:openeducat_quiz.website_menu_quiz_menu
+msgid "Exams"
+msgstr "考试"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Fetch Questions"
+msgstr "获取问题"
+
+#. module: openeducat_quiz
+#: selection:op.question.bank.line,que_type:0
+#: selection:op.quiz.line,que_type:0
+#: selection:op.quiz.result.line,que_type:0
+msgid "Fill in the Blank"
+msgstr "填写空白"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_last_question
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_render_single_form_view
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_web_page
+msgid "Finish"
+msgstr "完成"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_finish_date
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_result_search
+msgid "Finished On"
+msgstr "完成的"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_update_mark_answer
+msgid "Given Answer"
+msgstr "给定答案"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+msgid "Given Aswer"
+msgstr "给定 Aswer"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_grace_period
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Grace Period"
+msgstr "宽 限期"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_answer_grade
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_answer_grade
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_answers_grade
+msgid "Grade"
+msgstr "年级"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_answer_grade_value
+msgid "Grade (%)"
+msgstr "等级 (%)"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line_grade_true
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line_grade_true
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_grade_true
+msgid "Grade for truly given answer"
+msgstr "真正给出答案的等级"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line_grade_false
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line_grade_false
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_grade_false
+msgid "Grade for wrongly given answer"
+msgstr "错误给出的答案等级"
+
+#. module: openeducat_quiz
+#: model:ir.actions.act_window,name:openeducat_quiz.act_open_op_answer_grade_view
+#: model:ir.model,name:openeducat_quiz.model_op_answer_grade
+#: model:ir.ui.menu,name:openeducat_quiz.menu_op_answer_grade
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_answer_grade_form
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_answer_grade_search
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_answer_grade_tree
+msgid "Grades"
+msgstr "成绩"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_result_search
+msgid "Group By"
+msgstr "组按"
+
+#. module: openeducat_quiz
+#: selection:op.quiz,start_view:0
+msgid "HTML"
+msgstr "Html"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_quiz_html
+msgid "HTML Content"
+msgstr "HTML 内容"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_time_limit_hr
+msgid "Hour"
+msgstr "小时"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_render_single_form_view
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Hr"
+msgstr "人力资源"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_answer_grade_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_answer_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_type_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_wizard_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_answer_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_category_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_config_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_answers_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_message_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_update_mark_id
+msgid "ID"
+msgstr "Id"
+
+#. module: openeducat_quiz
+#: selection:op.quiz,state:0
+#: selection:op.quiz.result,state:0
+msgid "In-Progress"
+msgstr "正在进行中"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_answer_grade___last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank___last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_answer___last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line___last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_type___last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_wizard___last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz___last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_answer___last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_category___last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_config___last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line___last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result___last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line___last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_answers___last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_message___last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_update_mark___last_update
+msgid "Last Modified on"
+msgstr "上次修改时间"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_answer_grade_write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_answer_write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line_write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_type_write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_wizard_write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_answer_write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_category_write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_config_write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line_write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_answers_write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_message_write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_update_mark_write_uid
+msgid "Last Updated by"
+msgstr "最后更新者"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_answer_grade_write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_answer_write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line_write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_type_write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_wizard_write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_answer_write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_category_write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_config_write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line_write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_answers_write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_message_write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_update_mark_write_date
+msgid "Last Updated on"
+msgstr "上次更新时间"
+
+#. module: openeducat_quiz
+#: selection:op.quiz,quiz_config:0
+msgid "Manual"
+msgstr "手动"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line_mark
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line_mark
+msgid "Marks"
+msgstr "标志着"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_message_message
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Message"
+msgstr "消息"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_message_ids
+msgid "Messages"
+msgstr "消息"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_render_single_form_view
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Min"
+msgstr "分钟"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_grace_period_minute
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_time_limit_minute
+msgid "Minutes"
+msgstr "分钟"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_answer_grade_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_type_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_category_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_name
+msgid "Name"
+msgstr "名字"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_first_question
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_middle_question
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_render_single_form_view
+msgid "Next"
+msgstr "下"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_no_of_attempt
+msgid "No of Attempt"
+msgstr "没有尝试"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_no_of_question
+msgid "No of Question from each Question Bank"
+msgstr "每个问题银行都没有问题"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+msgid "Not Attempt Answers"
+msgstr "不尝试答案"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_config_no_of_question
+msgid "Number of Question"
+msgstr "问题数"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_prev_readonly
+msgid "Only One Time Answer"
+msgstr "只有一次回答"
+
+#. module: openeducat_quiz
+#: selection:op.quiz,time_expire:0
+msgid "Open attempts are submitted automatically"
+msgstr "自动提交打开的尝试"
+
+#. module: openeducat_quiz
+#: selection:op.question.bank.line,que_type:0
+#: selection:op.quiz.line,que_type:0
+#: selection:op.quiz.result.line,que_type:0
+msgid "Optional"
+msgstr "选"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+msgid "Original Answer"
+msgstr "原始答案"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_starting_page
+msgid "Please hear the audio before start exam"
+msgstr "开始考试前请先听录音。"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_starting_page
+msgid "Please see the video before start exam"
+msgstr "开始考试前请看视频"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_last_question
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_middle_question
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_render_single_form_view
+msgid "Prev"
+msgstr "昨日"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_prev_allow
+msgid "Previous Question Allowed"
+msgstr "允许的上一个问题"
+
+#. module: openeducat_quiz
+#: model:ir.actions.act_window,name:openeducat_quiz.act_open_op_update_mark_wizard_view
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_answer_question_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line_line_ids
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_answer_line_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_answers_line_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_update_mark_name
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+msgid "Question"
+msgstr "问题"
+
+#. module: openeducat_quiz
+#: model:ir.actions.act_window,name:openeducat_quiz.act_open_op_question_bank_view
+#: model:ir.model,name:openeducat_quiz.model_op_question_bank
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line_bank_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_wizard_bank_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_config_bank_id
+#: model:ir.ui.menu,name:openeducat_quiz.menu_op_question_bank
+#: model:ir.ui.menu,name:openeducat_quiz.op_question_bank_menu
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_form
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_search
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_tree
+msgid "Question Bank"
+msgstr "问题银行"
+
+#. module: openeducat_quiz
+#: model:ir.model,name:openeducat_quiz.model_op_question_bank_answer
+msgid "Question Bank Answers"
+msgstr "问题银行答案"
+
+#. module: openeducat_quiz
+#: model:ir.actions.act_window,name:openeducat_quiz.act_open_op_question_bank_type_view
+#: model:ir.model,name:openeducat_quiz.model_op_question_bank_type
+#: model:ir.ui.menu,name:openeducat_quiz.menu_op_question_bank_type
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_type_form
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_type_search
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_type_tree
+msgid "Question Bank Type"
+msgstr "问题银行类型"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_render_single_form_view
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_web_page_single_form
+msgid "Question Grid"
+msgstr "问题网格"
+
+#. module: openeducat_quiz
+#: model:ir.model,name:openeducat_quiz.model_op_question_bank_line
+msgid "Question Lines"
+msgstr "问题行"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line_que_type
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line_que_type
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_que_type
+msgid "Question Type"
+msgstr "问题类型"
+
+#. module: openeducat_quiz
+#: model:ir.actions.act_window,name:openeducat_quiz.act_open_op_question_wizard_view
+#: model:ir.model,name:openeducat_quiz.model_op_quiz_line
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line_ids
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_wizard_question_ids
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line_ids
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_form
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_question_wizard_form
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_update_mark_wizard_form
+msgid "Questions"
+msgstr "问题"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Questions Configuration"
+msgstr "问题配置"
+
+#. module: openeducat_quiz
+#: sql_constraint:op.quiz.line:0
+msgid "Questions mark should be greater then 0"
+msgstr "问题标记应该是更大然后0"
+
+#. module: openeducat_quiz
+#: model:ir.actions.act_window,name:openeducat_quiz.act_open_op_quiz_view
+#: model:ir.model,name:openeducat_quiz.model_op_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_config_quiz_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line_quiz_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_message_quiz_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_quiz_id
+#: model:ir.ui.menu,name:openeducat_quiz.menu_op_quiz
+#: model:ir.ui.menu,name:openeducat_quiz.op_quiz_main_menu
+#: model:ir.ui.menu,name:openeducat_quiz.op_quiz_menu
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_result_search
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_search
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_tree
+msgid "Quiz"
+msgstr "测验"
+
+#. module: openeducat_quiz
+#: selection:op.quiz,quiz_config:0
+msgid "Quiz Bank with Random Quesiton"
+msgstr "随机相的问答库"
+
+#. module: openeducat_quiz
+#: selection:op.quiz,quiz_config:0
+msgid "Quiz Bank with Selected Question"
+msgstr "试题库选择的问题"
+
+#. module: openeducat_quiz
+#: model:ir.actions.act_window,name:openeducat_quiz.act_open_op_quiz_category_view
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_categ_id
+#: model:ir.ui.menu,name:openeducat_quiz.menu_op_quiz_category
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_category_form
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_category_search
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_category_tree
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_result_search
+msgid "Quiz Category"
+msgstr "测验类别"
+
+#. module: openeducat_quiz
+#: model:ir.model,name:openeducat_quiz.model_op_quiz_result_line
+msgid "Quiz Result Line"
+msgstr "测验结果行"
+
+#. module: openeducat_quiz
+#: model:ir.model,name:openeducat_quiz.model_op_quiz_result_message
+msgid "Quiz Result Message"
+msgstr "测验结果消息"
+
+#. module: openeducat_quiz
+#: model:ir.model,name:openeducat_quiz.model_op_quiz_result
+msgid "Quiz Results"
+msgstr "测验结果"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Qustions"
+msgstr "Qustions"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Re-open"
+msgstr "重新打开"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_mark
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_received_marks
+#: model:ir.ui.view,arch_db:openeducat_quiz.exam_user_result_profile
+#: model:ir.ui.view,arch_db:openeducat_quiz.my_result
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+msgid "Received Marks"
+msgstr "收到的标记"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_result_id
+#: model:ir.ui.view,arch_db:openeducat_quiz.portal_my_result_account_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_result_form
+msgid "Result"
+msgstr "结果"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Result Configuration"
+msgstr "结果配置"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_message_result_from
+msgid "Result From (%)"
+msgstr "结果 (%)"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_ids
+msgid "Result Line"
+msgstr "结果行"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Result Message"
+msgstr "结果消息"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_message_result_to
+msgid "Result To (%)"
+msgstr "结果 (%)"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Result won't display if descriptive Questions."
+msgstr "如果描述性问题, 结果将无法显示。"
+
+#. module: openeducat_quiz
+#: model:ir.actions.act_window,name:openeducat_quiz.act_open_op_quiz_result_view
+#: model:ir.ui.menu,name:openeducat_quiz.menu_op_quiz_result
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_result_form
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_result_search
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_result_tree
+msgid "Results"
+msgstr "结果"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.exam_user_result_profile
+#: model:ir.ui.view,arch_db:openeducat_quiz.my_result
+msgid "Score"
+msgstr "得分"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_score
+msgid "Score (%)"
+msgstr "分数 (%)"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+msgid "Score Board"
+msgstr "记分牌"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_render_single_form_view
+msgid "Sec"
+msgstr "秒"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_question_wizard_form
+msgid "Select Questions"
+msgstr "选择问题"
+
+#. module: openeducat_quiz
+#: code:addons/openeducat_quiz/wizard/update_mark.py:38
+#, python-format
+msgid "Set proper marks."
+msgstr "设置正确的标记。"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_shuffle
+msgid "Shuffle the Choices"
+msgstr "洗牌选择"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_single_que
+msgid "Single Question Per Page"
+msgstr "每页单问题"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_description
+msgid "Sort Description"
+msgstr "排序说明"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_time_spent_hr
+msgid "Spent Hours"
+msgstr "花了几个小时"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_time_spent_minute
+msgid "Spent Minutes"
+msgstr "花了几分钟"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_time_spent_second
+msgid "Spent Seconds"
+msgstr "花了几秒钟"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_render_exam_main_form_view
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_starting_page
+msgid "Start Exam"
+msgstr "开始考试"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Starting Page"
+msgstr "起始页"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_start_view
+msgid "Starting View"
+msgstr "开始视图"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_state
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_state
+msgid "State"
+msgstr "状态"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_grace_period_hr
+msgid "Submission Grace Period"
+msgstr "提交宽限期"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_completed
+msgid "Thank you for Quiz"
+msgstr "感谢您的测验"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.my_result
+#: model:ir.ui.view,arch_db:openeducat_quiz.portal_my_result_quiz
+msgid "There are currently no Result for your account."
+msgstr "您的帐户目前没有结果。"
+
+#. module: openeducat_quiz
+#: selection:op.quiz,time_expire:0
+msgid "There is a grace period when open attempts can be submitted, but no more questions answered"
+msgstr "有一个宽限期, 当打开尝试可以提交, 但没有更多的问题回答"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_time_config
+msgid "Time Configuration"
+msgstr "时间配置"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Time Limit"
+msgstr "时间限制"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Timing Configuration"
+msgstr "定时配置"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_total_correct
+#: model:ir.ui.view,arch_db:openeducat_quiz.exam_user_result_profile
+#: model:ir.ui.view,arch_db:openeducat_quiz.my_result
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+msgid "Total Correct"
+msgstr "合计正确"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_total_incorrect
+#: model:ir.ui.view,arch_db:openeducat_quiz.exam_user_result_profile
+#: model:ir.ui.view,arch_db:openeducat_quiz.my_result
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+msgid "Total Incorrect"
+msgstr "总计不正确"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_total_marks
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_total_marks
+#: model:ir.ui.view,arch_db:openeducat_quiz.exam_user_result_profile
+#: model:ir.ui.view,arch_db:openeducat_quiz.my_result
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+msgid "Total Marks"
+msgstr "总标记"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_total_not_attempt
+msgid "Total Not Attempt"
+msgstr "总不尝试"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_total_question
+#: model:ir.ui.view,arch_db:openeducat_quiz.exam_user_result_profile
+#: model:ir.ui.view,arch_db:openeducat_quiz.my_result
+msgid "Total Question"
+msgstr "总的问题"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+msgid "Total Questions"
+msgstr "问题总数"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+msgid "Truly Given Answers"
+msgstr "真正给出答案"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_bank_type
+msgid "Type"
+msgstr "类型"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_result_form
+msgid "Update Mark"
+msgstr "更新标记"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_result_search
+msgid "User"
+msgstr "用户"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_given_answer
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_update_mark_mark
+msgid "User Answer"
+msgstr "用户应答"
+
+#. module: openeducat_quiz
+#: selection:op.quiz,start_view:0
+msgid "Video"
+msgstr "视频"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_quiz_video
+msgid "Video File"
+msgstr "视频文件"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "View Exam"
+msgstr "查看考试"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_starting_page
+msgid "Welcome to Exam :"
+msgstr "欢迎参加考试:"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_time_expire
+msgid "When Time Expires"
+msgstr "当时间过期时"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+msgid "Wrongly Given Answers"
+msgstr "错误地给出答案"
+
+#. module: openeducat_quiz
+#: code:addons/openeducat_quiz/models/quiz.py:187
+#, python-format
+msgid "You are already reached maximum attempt of this exam"
+msgstr "你已经达到了这次考试的最大尝试。"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.my_result
+#: model:ir.ui.view,arch_db:openeducat_quiz.portal_my_result_quiz
+msgid "Your Result"
+msgstr "您的结果"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_completed
+msgid "Your answers are recorded"
+msgstr "您的答案被记录"
+
+#. module: openeducat_quiz
+#: model:ir.model,name:openeducat_quiz.model_op_question_wizard
+msgid "op.question.wizard"
+msgstr "op.question.wizard"
+
+#. module: openeducat_quiz
+#: model:ir.model,name:openeducat_quiz.model_op_quiz_category
+msgid "op.quiz.category"
+msgstr "op.quiz.category"
+
+#. module: openeducat_quiz
+#: model:ir.model,name:openeducat_quiz.model_op_quiz_config
+msgid "op.quiz.config"
+msgstr "op.quiz.config"
+
+#. module: openeducat_quiz
+#: model:ir.model,name:openeducat_quiz.model_op_quiz_result_line_answers
+msgid "op.quiz.result.line.answers"
+msgstr "op.quiz.result.line.answers"
+
+#. module: openeducat_quiz
+#: model:ir.model,name:openeducat_quiz.model_op_update_mark
+msgid "op.update.mark"
+msgstr "op.update.mark"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_question_wizard_form
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_update_mark_wizard_form
+msgid "or"
+msgstr "或"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line_que_id
+msgid "question"
+msgstr "问题"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_user_id
+msgid "user"
+msgstr "用户"
+

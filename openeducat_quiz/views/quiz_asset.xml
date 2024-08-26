@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<odoo>
+    <data>
+        <template id="assets_frontend" inherit_id="website.assets_frontend" name="Quiz Template">
+          <xpath expr="." position="inside">
+              <link type="text/less" href="/openeducat_quiz/static/src/scss/website_slides.scss" rel="stylesheet"/>
+              <link type="text/less" href="/openeducat_quiz/static/src/scss/quiz_timer.scss" rel="stylesheet"/>
+              <script type="text/javascript" src="/openeducat_quiz/static/src/js/website_quiz.js"></script>
+              <script type="text/javascript" src="/openeducat_quiz/static/src/js/quiz_timer.js"></script>
+              <script type="text/javascript" src="/openeducat_quiz/static/src/js/progress.js"></script>
+          </xpath>
+        </template>
+    </data>
+</odoo>

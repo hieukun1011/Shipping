@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_op_question_bank_line_tree" model="ir.ui.view">
+            <field name="name">op.question.bank.line.tree</field>
+            <field name="model">op.question.bank.line</field>
+            <field name="type">tree</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <tree string="Question" create="0">
+                    <field name="name"/>
+                    <field name="mark"/>
+                    <field name="que_type"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_op_question_bank_line_form" model="ir.ui.view">
+            <field name="name">op.question.bank.line.form</field>
+            <field name="model">op.question.bank.line</field>
+            <field name="type">form</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="Question">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="mark"/>
+                            <field name="que_type"/>
+                            <field name="bank_id"/>
+                        </group>
+                        <notebook>
+                            <page string="Answers">
+                                <field name="line_ids">
+                                    <tree string="Answers" editable="bottom">
+                                        <field name="name" required="1"/>
+                                        <field name="grade_id" required="1" options="{'no_create': True}"/>
+                                    </tree>
+                                    <form string="Answers">
+                                        <group>
+                                            <field name="name"/>
+                                            <field name="grade_id" options="{'no_create': True}"/>
+                                        </group>
+                                    </form>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="act_open_op_question_bank_line_view">
+            <field name="name">Question</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">op.question.bank.line</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>

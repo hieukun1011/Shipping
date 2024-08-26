@@ -1,0 +1,1060 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: openeducat11enttranslation\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-12-12 06:07+0000\n"
+"PO-Revision-Date: 2018-03-07 00:02-0500\n"
+"Last-Translator: aakash.kodwani <aakash@techreceptives.com>\n"
+"Language-Team: Arabic\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"X-Generator: crowdin.com\n"
+"X-Crowdin-Project: openeducat11enttranslation\n"
+"X-Crowdin-Language: ar\n"
+"X-Crowdin-File: /v11_crowdin/openeducat_quiz/i18n/openeducat_quiz.pot\n"
+"Language: ar_SA\n"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_profile
+msgid "<b>Total Attempt</b> :"
+msgstr "<; b>; محاولة مجموع<;/b>:"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_question_mark
+msgid "Actual Marks"
+msgstr "علامات الفعلية"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_que_required
+msgid "All Question are Required"
+msgstr "مطلوبة من كل سؤال"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_answer_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line_answer
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_answer_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line_answer
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_answers_name
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+msgid "Answer"
+msgstr "إجابة"
+
+#. module: openeducat_quiz
+#: model:ir.model,name:openeducat_quiz.model_op_quiz_answer
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line_line_ids
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_line_ids
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_form
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Answers"
+msgstr "الإجابات"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_render_exam_main_form_view
+msgid "Attempt :"
+msgstr "محاولة:"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.my_result
+msgid "Attempt Date"
+msgstr "تاريخ محاولة"
+
+#. module: openeducat_quiz
+#: selection:op.quiz,time_expire:0
+msgid "Attempts must be submitted before time expires, or they are not counted"
+msgstr "المحاولات يجب أن تقدم قبل انتهاء الوقت، أو أنها لا تحسب"
+
+#. module: openeducat_quiz
+#: selection:op.quiz,start_view:0
+msgid "Audio"
+msgstr "الصوت"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_quiz_audio
+msgid "Audio File"
+msgstr "نوع واجهة العرض"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_profile
+msgid "Average Result"
+msgstr "نتيجة متوسط"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_render_exam_main_form_view
+msgid "Avg Result :"
+msgstr "متوسط النتيجة:"
+
+#. module: openeducat_quiz
+#: code:addons/openeducat_quiz/models/result.py:306
+#, python-format
+msgid "Can not set more then actual mark."
+msgstr "لا يمكن تعيين علامة ثم الفعلية أكثر."
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_question_wizard_form
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_update_mark_wizard_form
+#: selection:op.quiz,state:0
+#: selection:op.quiz.result,state:0
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line_case_sensitive
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line_case_sensitive
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_case_sensitive
+msgid "Case Sensitive"
+msgstr "تحسس حالة الأحرف"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_categ_id
+msgid "Category"
+msgstr "الفئة"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_challenge_ids
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Challenges"
+msgstr "التحديات"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Closed"
+msgstr "مقفل"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_category_code
+msgid "Code"
+msgstr "الكود"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_config_ids
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_quiz_config
+#: model:ir.ui.menu,name:openeducat_quiz.op_quiz_config_menu
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Configuration"
+msgstr "الإعدادات"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_question_wizard_form
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_update_mark_wizard_form
+msgid "Confirm"
+msgstr "تأكيد"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_answer
+msgid "Correct Answer"
+msgstr "إجابة رائعة"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_answer_grade_create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_answer_create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line_create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_type_create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_wizard_create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_answer_create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_category_create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_config_create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line_create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_answers_create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_message_create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_update_mark_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_answer_grade_create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_answer_create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line_create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_type_create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_wizard_create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_answer_create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_category_create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_config_create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line_create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_answers_create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_message_create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_update_mark_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_description
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_type_description
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_category_description
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_form
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Description"
+msgstr "الوصف"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_form
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_type_form
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_category_form
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Description..."
+msgstr "وصف..."
+
+#. module: openeducat_quiz
+#: selection:op.question.bank.line,que_type:0
+#: selection:op.quiz.line,que_type:0
+#: selection:op.quiz.result.line,que_type:0
+msgid "Descriptive"
+msgstr "الوصف"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_answer_grade_display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_answer_display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line_display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_type_display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_wizard_display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_answer_display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_category_display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_config_display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line_display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_answers_display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_message_display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_update_mark_display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_not_attempt_ans
+msgid "Display Not Attempted Answer"
+msgstr "عرض عدم محاولة الإجابة"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_show_result
+msgid "Display Result"
+msgstr "عرض النتيجة"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_right_ans
+msgid "Display Right Answer"
+msgstr "عرض الإجابات الصحيحة"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_wrong_ans
+msgid "Display Wrong Answer"
+msgstr "عرض إجابة خاطئة"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_result_form
+#: selection:op.quiz,state:0
+#: selection:op.quiz.result,state:0
+msgid "Done"
+msgstr "منتهي"
+
+#. module: openeducat_quiz
+#: selection:op.quiz,state:0
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.exam_user_result_profile
+#: model:ir.ui.view,arch_db:openeducat_quiz.my_result
+msgid "Exam Name"
+msgstr "اسم الامتحان"
+
+#. module: openeducat_quiz
+#: model:website.menu,name:openeducat_quiz.website_menu_quiz_menu
+msgid "Exams"
+msgstr "الامتحان"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Fetch Questions"
+msgstr "بحث الأسئلة"
+
+#. module: openeducat_quiz
+#: selection:op.question.bank.line,que_type:0
+#: selection:op.quiz.line,que_type:0
+#: selection:op.quiz.result.line,que_type:0
+msgid "Fill in the Blank"
+msgstr "ملء الفراغ"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_last_question
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_render_single_form_view
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_web_page
+msgid "Finish"
+msgstr "مُنتهي"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_finish_date
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_result_search
+msgid "Finished On"
+msgstr "الحصة المنتهية"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_update_mark_answer
+msgid "Given Answer"
+msgstr "إجابة لطيفة"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+msgid "Given Aswer"
+msgstr "إجابة لطيفة"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_grace_period
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Grace Period"
+msgstr "فترة سماح"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_answer_grade
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_answer_grade
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_answers_grade
+msgid "Grade"
+msgstr "مستوى"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_answer_grade_value
+msgid "Grade (%)"
+msgstr "مستوى (%)"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line_grade_true
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line_grade_true
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_grade_true
+msgid "Grade for truly given answer"
+msgstr "الصف لجواب معين حقاً"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line_grade_false
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line_grade_false
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_grade_false
+msgid "Grade for wrongly given answer"
+msgstr "الصف للجواب خطأ معين"
+
+#. module: openeducat_quiz
+#: model:ir.actions.act_window,name:openeducat_quiz.act_open_op_answer_grade_view
+#: model:ir.model,name:openeducat_quiz.model_op_answer_grade
+#: model:ir.ui.menu,name:openeducat_quiz.menu_op_answer_grade
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_answer_grade_form
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_answer_grade_search
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_answer_grade_tree
+msgid "Grades"
+msgstr "مستوى"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_result_search
+msgid "Group By"
+msgstr "تجميع حسب"
+
+#. module: openeducat_quiz
+#: selection:op.quiz,start_view:0
+msgid "HTML"
+msgstr "إتش تي أم ال"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_quiz_html
+msgid "HTML Content"
+msgstr "محتوى HTML"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_time_limit_hr
+msgid "Hour"
+msgstr "الساعات"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_render_single_form_view
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Hr"
+msgstr "الموارد البشرية"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_answer_grade_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_answer_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_type_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_wizard_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_answer_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_category_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_config_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_answers_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_message_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_update_mark_id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: openeducat_quiz
+#: selection:op.quiz,state:0
+#: selection:op.quiz.result,state:0
+msgid "In-Progress"
+msgstr "في تَقَدم "
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_answer_grade___last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank___last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_answer___last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line___last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_type___last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_wizard___last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz___last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_answer___last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_category___last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_config___last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line___last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result___last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line___last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_answers___last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_message___last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_update_mark___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_answer_grade_write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_answer_write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line_write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_type_write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_wizard_write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_answer_write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_category_write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_config_write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line_write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_answers_write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_message_write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_update_mark_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_answer_grade_write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_answer_write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line_write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_type_write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_wizard_write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_answer_write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_category_write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_config_write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line_write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_answers_write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_message_write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_update_mark_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: openeducat_quiz
+#: selection:op.quiz,quiz_config:0
+msgid "Manual"
+msgstr "يدوى"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line_mark
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line_mark
+msgid "Marks"
+msgstr "علامات"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_message_message
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Message"
+msgstr "الرسالة"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_message_ids
+msgid "Messages"
+msgstr "الرسائل"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_render_single_form_view
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Min"
+msgstr "دقيقة"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_grace_period_minute
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_time_limit_minute
+msgid "Minutes"
+msgstr "دقيقة"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_answer_grade_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_type_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_category_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_first_question
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_middle_question
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_render_single_form_view
+msgid "Next"
+msgstr "التالي"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_no_of_attempt
+msgid "No of Attempt"
+msgstr "لا لمحاولة"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_no_of_question
+msgid "No of Question from each Question Bank"
+msgstr "لا مسألة من كل مصرف السؤال"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+msgid "Not Attempt Answers"
+msgstr "عدم محاولة إجابات"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_config_no_of_question
+msgid "Number of Question"
+msgstr "عدد عروض الأسعار"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_prev_readonly
+msgid "Only One Time Answer"
+msgstr "الإجابة مرة واحدة فقط"
+
+#. module: openeducat_quiz
+#: selection:op.quiz,time_expire:0
+msgid "Open attempts are submitted automatically"
+msgstr "وتقدم محاولات الفتح تلقائياً"
+
+#. module: openeducat_quiz
+#: selection:op.question.bank.line,que_type:0
+#: selection:op.quiz.line,que_type:0
+#: selection:op.quiz.result.line,que_type:0
+msgid "Optional"
+msgstr "خيارات"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+msgid "Original Answer"
+msgstr "الجواب الأصلي"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_starting_page
+msgid "Please hear the audio before start exam"
+msgstr "يرجى سماع الصوت قبل بدء الامتحان"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_starting_page
+msgid "Please see the video before start exam"
+msgstr "الرجاء مشاهدة الفيديو قبل بدء الامتحان"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_last_question
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_middle_question
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_render_single_form_view
+msgid "Prev"
+msgstr "سابق"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_prev_allow
+msgid "Previous Question Allowed"
+msgstr "السؤال السابق يسمح"
+
+#. module: openeducat_quiz
+#: model:ir.actions.act_window,name:openeducat_quiz.act_open_op_update_mark_wizard_view
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_answer_question_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line_line_ids
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_answer_line_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_answers_line_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_update_mark_name
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+msgid "Question"
+msgstr "سؤال"
+
+#. module: openeducat_quiz
+#: model:ir.actions.act_window,name:openeducat_quiz.act_open_op_question_bank_view
+#: model:ir.model,name:openeducat_quiz.model_op_question_bank
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line_bank_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_wizard_bank_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_config_bank_id
+#: model:ir.ui.menu,name:openeducat_quiz.menu_op_question_bank
+#: model:ir.ui.menu,name:openeducat_quiz.op_question_bank_menu
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_form
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_search
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_tree
+msgid "Question Bank"
+msgstr "اسم السؤال"
+
+#. module: openeducat_quiz
+#: model:ir.model,name:openeducat_quiz.model_op_question_bank_answer
+msgid "Question Bank Answers"
+msgstr "إجابات بنك أسئلة"
+
+#. module: openeducat_quiz
+#: model:ir.actions.act_window,name:openeducat_quiz.act_open_op_question_bank_type_view
+#: model:ir.model,name:openeducat_quiz.model_op_question_bank_type
+#: model:ir.ui.menu,name:openeducat_quiz.menu_op_question_bank_type
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_type_form
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_type_search
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_type_tree
+msgid "Question Bank Type"
+msgstr "نوع البنك السؤال"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_render_single_form_view
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_web_page_single_form
+msgid "Question Grid"
+msgstr "تم تحرير السؤال"
+
+#. module: openeducat_quiz
+#: model:ir.model,name:openeducat_quiz.model_op_question_bank_line
+msgid "Question Lines"
+msgstr "تم تحرير السؤال"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line_que_type
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line_que_type
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_que_type
+msgid "Question Type"
+msgstr "اسم السؤال"
+
+#. module: openeducat_quiz
+#: model:ir.actions.act_window,name:openeducat_quiz.act_open_op_question_wizard_view
+#: model:ir.model,name:openeducat_quiz.model_op_quiz_line
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line_ids
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_wizard_question_ids
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line_ids
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_form
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_question_wizard_form
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_update_mark_wizard_form
+msgid "Questions"
+msgstr "الأسئلة"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Questions Configuration"
+msgstr "تكوين الأسئلة"
+
+#. module: openeducat_quiz
+#: sql_constraint:op.quiz.line:0
+msgid "Questions mark should be greater then 0"
+msgstr "مارك الأسئلة يجب أن تكون أكبر ثم 0"
+
+#. module: openeducat_quiz
+#: model:ir.actions.act_window,name:openeducat_quiz.act_open_op_quiz_view
+#: model:ir.model,name:openeducat_quiz.model_op_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_config_quiz_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line_quiz_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_message_quiz_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_quiz_id
+#: model:ir.ui.menu,name:openeducat_quiz.menu_op_quiz
+#: model:ir.ui.menu,name:openeducat_quiz.op_quiz_main_menu
+#: model:ir.ui.menu,name:openeducat_quiz.op_quiz_menu
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_result_search
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_search
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_tree
+msgid "Quiz"
+msgstr "مسابقة"
+
+#. module: openeducat_quiz
+#: selection:op.quiz,quiz_config:0
+msgid "Quiz Bank with Random Quesiton"
+msgstr "مسابقة البنك مع Quesiton عشوائي"
+
+#. module: openeducat_quiz
+#: selection:op.quiz,quiz_config:0
+msgid "Quiz Bank with Selected Question"
+msgstr "مسابقة البنك مع السؤال المحدد"
+
+#. module: openeducat_quiz
+#: model:ir.actions.act_window,name:openeducat_quiz.act_open_op_quiz_category_view
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_categ_id
+#: model:ir.ui.menu,name:openeducat_quiz.menu_op_quiz_category
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_category_form
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_category_search
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_category_tree
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_result_search
+msgid "Quiz Category"
+msgstr "مسابقة الفئة"
+
+#. module: openeducat_quiz
+#: model:ir.model,name:openeducat_quiz.model_op_quiz_result_line
+msgid "Quiz Result Line"
+msgstr "خط نتيجة الاختبار"
+
+#. module: openeducat_quiz
+#: model:ir.model,name:openeducat_quiz.model_op_quiz_result_message
+msgid "Quiz Result Message"
+msgstr "آخر رسالة"
+
+#. module: openeducat_quiz
+#: model:ir.model,name:openeducat_quiz.model_op_quiz_result
+msgid "Quiz Results"
+msgstr "نتائج الاختبار"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Qustions"
+msgstr "كوسشنز"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Re-open"
+msgstr "إعادة فتح"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_mark
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_received_marks
+#: model:ir.ui.view,arch_db:openeducat_quiz.exam_user_result_profile
+#: model:ir.ui.view,arch_db:openeducat_quiz.my_result
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+msgid "Received Marks"
+msgstr "الشارات المتلقاة"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_result_id
+#: model:ir.ui.view,arch_db:openeducat_quiz.portal_my_result_account_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_result_form
+msgid "Result"
+msgstr "النتيجة"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Result Configuration"
+msgstr "إعدادات التقرير"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_message_result_from
+msgid "Result From (%)"
+msgstr "الرد إلى (%)"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_ids
+msgid "Result Line"
+msgstr "رابط النتائج"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Result Message"
+msgstr "آخر رسالة"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_message_result_to
+msgid "Result To (%)"
+msgstr "الرد إلى (%)"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Result won't display if descriptive Questions."
+msgstr "لن يتم عرض النتيجة في حالة وصفية الأسئلة."
+
+#. module: openeducat_quiz
+#: model:ir.actions.act_window,name:openeducat_quiz.act_open_op_quiz_result_view
+#: model:ir.ui.menu,name:openeducat_quiz.menu_op_quiz_result
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_result_form
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_result_search
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_result_tree
+msgid "Results"
+msgstr "النتائج"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.exam_user_result_profile
+#: model:ir.ui.view,arch_db:openeducat_quiz.my_result
+msgid "Score"
+msgstr "نقاط"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_score
+msgid "Score (%)"
+msgstr "نقاط (%)"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+msgid "Score Board"
+msgstr "المجلس النتيجة"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_render_single_form_view
+msgid "Sec"
+msgstr "ثانية"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_question_wizard_form
+msgid "Select Questions"
+msgstr "بحث الأسئلة"
+
+#. module: openeducat_quiz
+#: code:addons/openeducat_quiz/wizard/update_mark.py:38
+#, python-format
+msgid "Set proper marks."
+msgstr "تعيين علامات السليم."
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_shuffle
+msgid "Shuffle the Choices"
+msgstr "تبديل الخيارات"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_single_que
+msgid "Single Question Per Page"
+msgstr "سؤال واحد في كل صفحة"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_description
+msgid "Sort Description"
+msgstr "وصف البيع"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_time_spent_hr
+msgid "Spent Hours"
+msgstr "الساعات المقضية"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_time_spent_minute
+msgid "Spent Minutes"
+msgstr "أمضى دقيقة"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_time_spent_second
+msgid "Spent Seconds"
+msgstr "ثانية المستهلك"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_render_exam_main_form_view
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_starting_page
+msgid "Start Exam"
+msgstr "بدء هدف"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Starting Page"
+msgstr "تاريخ البدء"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_start_view
+msgid "Starting View"
+msgstr "بدء العرض"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_state
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_state
+msgid "State"
+msgstr "المحافظة"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_grace_period_hr
+msgid "Submission Grace Period"
+msgstr "مهلة تقديم"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_completed
+msgid "Thank you for Quiz"
+msgstr "شكرا لك على الاختبار"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.my_result
+#: model:ir.ui.view,arch_db:openeducat_quiz.portal_my_result_quiz
+msgid "There are currently no Result for your account."
+msgstr "لا توجد حاليا طلبات لحسابك."
+
+#. module: openeducat_quiz
+#: selection:op.quiz,time_expire:0
+msgid "There is a grace period when open attempts can be submitted, but no more questions answered"
+msgstr "وهناك فترة سماح عندما يحاول فتح يمكنك تقديمها، ولكن الإجابة على لا أسئلة أخرى"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_time_config
+msgid "Time Configuration"
+msgstr "إعدادات تويتر"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Time Limit"
+msgstr "الحد الزمني"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "Timing Configuration"
+msgstr "إعدادات تويتر"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_total_correct
+#: model:ir.ui.view,arch_db:openeducat_quiz.exam_user_result_profile
+#: model:ir.ui.view,arch_db:openeducat_quiz.my_result
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+msgid "Total Correct"
+msgstr "المجموع الصحيح"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_total_incorrect
+#: model:ir.ui.view,arch_db:openeducat_quiz.exam_user_result_profile
+#: model:ir.ui.view,arch_db:openeducat_quiz.my_result
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+msgid "Total Incorrect"
+msgstr "إجمالي غير صحيحة"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_total_marks
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_total_marks
+#: model:ir.ui.view,arch_db:openeducat_quiz.exam_user_result_profile
+#: model:ir.ui.view,arch_db:openeducat_quiz.my_result
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+msgid "Total Marks"
+msgstr "إجمالي الهامش"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_total_not_attempt
+msgid "Total Not Attempt"
+msgstr "مجموع عدم محاولة"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_total_question
+#: model:ir.ui.view,arch_db:openeducat_quiz.exam_user_result_profile
+#: model:ir.ui.view,arch_db:openeducat_quiz.my_result
+msgid "Total Question"
+msgstr "سؤال ملحوظ"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+msgid "Total Questions"
+msgstr "سؤال ملحوظ"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+msgid "Truly Given Answers"
+msgstr "الإجابات المعطاة حقاً"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_bank_type
+msgid "Type"
+msgstr "النوع"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_result_form
+msgid "Update Mark"
+msgstr "تاريخ التحديث"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_result_search
+msgid "User"
+msgstr "المستخدم"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_given_answer
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_update_mark_mark
+msgid "User Answer"
+msgstr "إجابة جديدة "
+
+#. module: openeducat_quiz
+#: selection:op.quiz,start_view:0
+msgid "Video"
+msgstr "الفيديو"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_quiz_video
+msgid "Video File"
+msgstr "نوع واجهة العرض"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+msgid "View Exam"
+msgstr "عرض الامتحان"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_starting_page
+msgid "Welcome to Exam :"
+msgstr "مرحبا بك في :"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_time_expire
+msgid "When Time Expires"
+msgstr "عند انتهاء الوقت"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+msgid "Wrongly Given Answers"
+msgstr "الإجابات المعطاة حقاً"
+
+#. module: openeducat_quiz
+#: code:addons/openeducat_quiz/models/quiz.py:187
+#, python-format
+msgid "You are already reached maximum attempt of this exam"
+msgstr "أنت فعلا الوصول إلى محاولة الحد الأقصى لهذا الامتحان"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.my_result
+#: model:ir.ui.view,arch_db:openeducat_quiz.portal_my_result_quiz
+msgid "Your Result"
+msgstr "ردك"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.quiz_completed
+msgid "Your answers are recorded"
+msgstr "وتسجل إجاباتك"
+
+#. module: openeducat_quiz
+#: model:ir.model,name:openeducat_quiz.model_op_question_wizard
+msgid "op.question.wizard"
+msgstr "op.question.wizard"
+
+#. module: openeducat_quiz
+#: model:ir.model,name:openeducat_quiz.model_op_quiz_category
+msgid "op.quiz.category"
+msgstr "op.quiz.category"
+
+#. module: openeducat_quiz
+#: model:ir.model,name:openeducat_quiz.model_op_quiz_config
+msgid "op.quiz.config"
+msgstr "op.quiz.config"
+
+#. module: openeducat_quiz
+#: model:ir.model,name:openeducat_quiz.model_op_quiz_result_line_answers
+msgid "op.quiz.result.line.answers"
+msgstr "op.quiz.result.line.answers"
+
+#. module: openeducat_quiz
+#: model:ir.model,name:openeducat_quiz.model_op_update_mark
+msgid "op.update.mark"
+msgstr "op.update.mark"
+
+#. module: openeducat_quiz
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_question_wizard_form
+#: model:ir.ui.view,arch_db:openeducat_quiz.view_op_update_mark_wizard_form
+msgid "or"
+msgstr "أو"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line_que_id
+msgid "question"
+msgstr "سؤال"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_user_id
+msgid "user"
+msgstr "المستخدم"
+

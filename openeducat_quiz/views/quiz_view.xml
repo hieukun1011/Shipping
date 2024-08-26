@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_op_answer_grade_tree" model="ir.ui.view">
+            <field name="name">op.answer.grade.tree</field>
+            <field name="model">op.answer.grade</field>
+            <field name="type">tree</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <tree string="Grades">
+                    <field name="name"/>
+                    <field name="value"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_op_answer_grade_form" model="ir.ui.view">
+            <field name="name">op.answer.grade.form</field>
+            <field name="model">op.answer.grade</field>
+            <field name="type">form</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="Grades">
+                    <sheet>
+                        <group>
+                            <field name="name" required="1"/>
+                            <field name="value" required="1"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_op_answer_grade_search" model="ir.ui.view">
+            <field name="name">op.answer.grade.search</field>
+            <field name="model">op.answer.grade</field>
+            <field name="type">search</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <search string="Grades">
+                    <field name="name" select="True"/>
+                    <field name="value"/>
+                </search>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="act_open_op_answer_grade_view">
+            <field name="name">Grades</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">op.answer.grade</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="view_op_answer_grade_search"/>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="act_open_op_answer_grade_view_form">
+            <field name="act_window_id" ref="act_open_op_answer_grade_view"/>
+            <field name="sequence" eval="20"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_op_answer_grade_form"/>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="act_open_op_answer_grade_view_tree">
+            <field name="act_window_id" ref="act_open_op_answer_grade_view"/>
+            <field name="sequence" eval="10"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_op_answer_grade_tree"/>
+        </record>
+
+        <!-- Quiz Views -->
+        <record id="view_op_quiz_tree" model="ir.ui.view">
+            <field name="name">op.quiz.tree</field>
+            <field name="model">op.quiz</field>
+            <field name="type">tree</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <tree string="Quiz">
+                    <field name="name"/>
+                    <field name="categ_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_op_quiz_form" model="ir.ui.view">
+            <field name="name">op.quiz.form</field>
+            <field name="model">op.quiz</field>
+            <field name="type">form</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="Quiz">
+                    <header>
+                        <!--                        <button type="object" name="update_student" string="Update student" class="oe_highlight" attrs="{'invisible': [('batch_ids', '=', [])]}"/>-->
+                        <button name="view_quiz" invisible="state != 'open'" type="object" string="View Exam"/>
+                        <button name="action_confirm" invisible="state != 'draft'" string="Confirm" type="object"
+                                class="oe_highlight"/>
+                        <button name="action_done" invisible="state != 'open'" string="Done" type="object"
+                                class="oe_highlight"/>
+                        <button name="action_draft" invisible="state != 'cancel'" string="Re-open" type="object"
+                                class="oe_highlight"/>
+                        <button name="action_cancel" invisible="state != 'open'" string="Closed" type="object"/>
+                        <field name="state" widget="statusbar"/>
+                    </header>
+                    <sheet>
+                        <div class="oe_button_box" name="button_box">
+                            <button class="oe_stat_button"
+                                    type="object"
+                                    name="action_open_quiz_result"
+                                    icon="fa-list-alt">
+                                <div class="o_form_field o_stat_info">
+                                    <span class="o_stat_text">
+                                        <field name="total_quiz_count" class="o_stat_value"/>
+                                    <span> Result</span>
+                                    </span>
+                                </div>
+                            </button>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="name" required="1" readonly="state != 'draft'"/>
+                                <field name="quiz_config" required="1" readonly="state != 'draft'"/>
+                                <field name="type" required="1" readonly="state != 'draft'"/>
+                                <field name="course_ids" readonly="state != 'draft'"
+                                       invisible="type not in ['specific_course', 'specific_batch']" widget="many2many_tags"/>
+                                <field name="batch_ids" readonly="state != 'draft'" invisible="type != 'specific_batch'"
+                                       domain="[('course_id', 'in', course_ids)]" widget="many2many_tags"/>
+                                <!--                                <field name="department_id" readonly="state != 'draft'" invisible="type != 'integration_exam'" required="type == 'integration_exam'" widget="many2many_tags"/>-->
+                            </group>
+                            <group>
+                                <field name="categ_id" required="1" readonly="state != 'draft'"/>
+                                <field name="total_marks" readonly="1"/>
+                            </group>
+                        </group>
+                        <group invisible="quiz_config != 'quiz_bank_selected' or state != 'draft'">
+                            <button name="%(act_open_op_question_wizard_view)d" string="Fetch Questions" type="action"
+                                    class="oe_highlight"/>
+                        </group>
+                        <group string="Questions Configuration" invisible="quiz_config != 'quiz_bank_random'"
+                               readonly="state != 'draft'">
+                            <field name="config_ids"  required="quiz_config == 'quiz_bank_random'"
+                                   readonly="state != 'draft'">
+                                <tree string="Configuration" editable="bottom">
+                                    <field name="bank_id" required="1"/>
+                                    <field name="no_of_question" required="1"/>
+                                </tree>
+                            </field>
+                        </group>
+                        <notebook>
+                            <page string="Questions" invisible="quiz_config == 'quiz_bank_random'">
+                                <field name="line_ids"
+                                       readonly="quiz_config not in ['normal','quiz_bank_selected'] or state != 'draft'">
+                                    <tree string="Questions">
+                                        <field name="name"/>
+                                        <field name="que_type"/>
+                                        <field name="mark"/>
+                                    </tree>
+                                    <form string="Questions">
+                                        <group>
+                                            <field name="name" required="1"/>
+                                            <field name="mark" required="1"/>
+                                            <field name="que_type" required="1"/>
+                                            <field name="case_sensitive" invisible="que_type == 'blank'"/>
+                                            <field name="answer" invisible="que_type not in ['blank','descriptive']"
+                                                   required="que_type == 'blank'"/>
+                                            <field name="grade_true_id" invisible="que_type != 'blank'"
+                                                   required="que_type == 'blank'"/>
+                                            <field name="grade_false_id"
+                                                   invisible="que_type != 'blank'" required="que_type == 'blank'"/>
+                                            <field name="material_type"/>
+                                            <field name="video_type" invisible="material_type not in ['video']"
+                                                   required="material_type in ['video']"/>
+
+                                            <field name="attachment_name" invisible="1"/>
+                                            <field name="attachment" widget="binary" filename="attachment_name"
+                                                   invisible="(material_type == False and video_type == False) or (material_type in ['quiz'] and video_type in ['fileupload']) or ((material_type not in ['audio','document','infographic'] and video_type in ['youtube','vimeo','dartfish']) and video_type not in ['fileupload'])"/>
+                                            <field name="document_url"
+                                                   invisible="material_type != 'video' or video_type == 'fileupload'"/>
+                                            <field name="document_id"
+                                                   invisible="material_type != 'video' or video_type == 'fileupload'"/>
+                                        </group>
+                                        <group name="answers" string="Answers" invisible="que_type != 'optional'">
+                                            <field name="line_ids">
+                                                <tree string="Answers" editable="bottom">
+                                                    <field name="name" required="1"/>
+                                                    <field name="grade_id" options="{'no_create': True}"/>
+                                                </tree>
+                                                <form string="Answers">
+                                                    <group>
+                                                        <field name="name" required="1"/>
+                                                        <field name="grade_id" options="{'no_create': True}"/>
+                                                    </group>
+                                                </form>
+                                            </field>
+                                        </group>
+                                    </form>
+                                </field>
+                            </page>
+                            <page string="Students" name="student" invisible="type == 'all'">
+                                <field name="student_ids">
+                                    <tree>
+                                        <field name="name"/>
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Result Message">
+                                <field name="quiz_message_ids" readonly="state != 'draft'">
+                                    <tree string="Result Message">
+                                        <field name="result_from"/>
+                                        <field name="result_to"/>
+                                    </tree>
+                                    <form string="Result Message">
+                                        <group>
+                                            <field name="result_from" required="1"/>
+                                            <field name="result_to" required="1"/>
+                                        </group>
+                                        <separator string="Message"/>
+                                        <field name="message"/>
+                                    </form>
+                                </field>
+                            </page>
+                            <page string="Configuration">
+                                <group>
+                                    <group>
+                                        <field name="single_que" readonly="state != 'draft'"/>
+                                        <field name="prev_allow" invisible="single_que == False"
+                                               readonly="state != 'draft'"/>
+                                        <field name="prev_readonly" readonly="state != 'draft'"/>
+                                    </group>
+                                    <group>
+                                        <field name="no_of_attempt" readonly="state != 'draft'"/>
+                                        <field name="que_required" readonly="state != 'draft'"/>
+                                        <field name="auth_required" readonly="state != 'draft'"/>
+                                    </group>
+                                </group>
+                                <group>
+                                    <group string="Result Configuration">
+                                        <field name="show_result" readonly="state != 'draft'"
+                                               help="Result won't display if descriptive Questions."/>
+                                        <field name="right_ans"
+                                               readonly="state != 'draft'" invisible="show_result == False"/>
+                                        <field name="wrong_ans"
+                                               readonly="state != 'draft'" invisible="show_result == False"/>
+                                        <field name="not_attempt_ans"
+                                               readonly="state != 'draft'" invisible="show_result == False"/>
+                                        <field name="is_public_result"/>
+                                    </group>
+                                    <group string="Timing Configuration">
+                                        <field name="time_config" readonly="state != 'draft'"/>
+                                        <label for="time_config" string="Time Limit"
+                                               invisible="time_config == False"/>
+                                        <div>
+                                            <field name="time_limit_hr" style="width: 30%;"
+                                                   invisible="time_config == False" required="time_config == True"
+                                                   readonly="state != 'draft'"/>
+                                            <label string="Hr" style="width: 8%;" for="time_limit_hr"
+                                                   invisible="time_config == False"/>
+                                            <field name="time_limit_minute" style="width: 30%;"
+                                                   invisible="time_config == False" required="time_config == True"
+                                                   readonly="state != 'draft'"/>
+                                            <label string="Min" style="width: 20%;" for="time_limit_minute"
+                                                   invisible="time_config == False"/>
+                                        </div>
+                                        <field name="time_expire" invisible="1"/>
+                                        <field name="grace_period"
+                                               invisible="time_expire != 'grace_period' or time_config == False"/>
+                                        <label for="grace_period" string="Grace Period"
+                                               invisible="grace_period == False or time_config == False"/>
+                                        <div>
+                                            <field name="grace_period_hr" style="width: 30%;"
+                                                   invisible="grace_period == False or time_config == False"
+                                                   required="grace_period == True or time_config ==False"/>
+                                            <label for="grace_period_hr" string="Hr" style="width: 8%;"
+                                                   invisible="grace_period == False or time_config == False"/>
+                                            <field name="grace_period_minute" style="width: 30%;"
+                                                   invisible="grace_period == False or time_config == False"
+                                                   required="grace_period == True or time_config ==False"/>
+                                            <label for="grace_period_minute" string="Min" style="width: 20%;"
+                                                   invisible="grace_period == False or time_config == False"/>
+                                        </div>
+                                    </group>
+                                </group>
+                            </page>
+                            <page string="Starting Page">
+                                <group>
+                                    <field name="start_view" required="1"/>
+                                </group>
+                                <field name="binary_quiz_audio_name" invisible="1"/>
+                                <field name="quiz_audio" filename="binary_quiz_audio_name"
+                                       invisible="start_view != 'audio'"
+                                       required="start_view == 'audio'"/>
+                                <field name="binary_quiz_video_name" invisible="1"/>
+                                <field name="quiz_video" filename="binary_quiz_video_name"
+                                       invisible="start_view != 'video'"
+                                       required="start_view == 'audio'"/>
+                                <field name="attachment_ids" widget="many2many_binary" invisible="1"/>
+                                <field name="quiz_html"
+                                       invisible="start_view != 'html'"/>
+                            </page>
+                            <page string="Description">
+                                <field name="description" placeholder="Description..."/>
+                            </page>
+                            <page string="Challenges">
+                                <group>
+                                    <field name="challenge_ids" widget="many2many_tags"/>
+                                </group>
+                            </page>
+                            <!--                            <page string="Employee">-->
+                            <!--                                 <field name="list_candidates" nolabel="1" readonly="1"/>-->
+                            <!--                            </page>-->
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_op_quiz_search" model="ir.ui.view">
+            <field name="name">op.quiz.search</field>
+            <field name="model">op.quiz</field>
+            <field name="type">search</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <search string="Quiz">
+                    <field name="name" select="True"/>
+                    <field name="categ_id"/>
+                </search>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="act_open_op_quiz_view">
+            <field name="name">Quiz</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">op.quiz</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="view_op_quiz_search"/>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="act_open_op_quiz_view_form">
+            <field name="act_window_id" ref="act_open_op_quiz_view"/>
+            <field name="sequence" eval="20"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_op_quiz_form"/>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="act_open_op_quiz_view_tree">
+            <field name="act_window_id" ref="act_open_op_quiz_view"/>
+            <field name="sequence" eval="10"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_op_quiz_tree"/>
+        </record>
+    </data>
+</odoo>

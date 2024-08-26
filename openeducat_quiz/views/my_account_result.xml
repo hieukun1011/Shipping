@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="portal_my_result_account_quiz" name="Portal My Result" inherit_id="portal.portal_my_home" priority="30">
+        <xpath expr="//div[hasclass('o_portal_docs')]" position="inside">
+            <t t-if="exam_count" t-call="portal.portal_docs_entry">
+                <t t-set="title">Result</t>
+                <t t-set="url" t-value="'/users/result-overview'"/>
+                <t t-set="count" t-value="exam_count"/>
+            </t>
+        </xpath>
+    </template>
+
+    <template id="my_result" name="My result">
+        <t t-call="portal.portal_layout">
+            <h3 class="page-header mt-4">Your Result</h3>
+            <t t-if="not result_data">
+                <p>There are currently no Result for your account.</p>
+            </t>
+            <t t-if="result_data">
+                <table class="table table-stripped mt-4">
+                    <thead>
+                        <tr>
+                            <th>Exam Name</th>
+                            <th>Total Question</th>
+                            <th>Total Correct</th>
+                            <th>Total Incorrect</th>
+                            <th>Total Marks</th>
+                            <th>Received Marks</th>
+                            <th>Score</th>
+                            <th>Attempt Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <t t-foreach="result_data" t-as="line">
+                            <tr>
+                                <td><t t-esc="line['name']"/></td>
+                                <td><t t-esc="line['ttl_que']"/></td>
+                                <td><t t-esc="line['ttl_crct']"/></td>
+                                <td><t t-esc="line['ttl_incrct']"/></td>
+                                <td><t t-esc="line['ttl_marks']"/></td>
+                                <td><t t-esc="line['rec_marks']"/></td>
+                                <td><t t-esc="line['score']"/></td>
+                                <td><t t-esc="line['finish_date']"/></td>
+                                <td>
+                                    <a role="button" style="padding: 5px 10px; color: white; background-color: #595A80; border: none; border-radius: 4px; cursor: pointer;" t-attf-href="/exam/result/#{line['id']}">
+                                        Result
+                                    </a>
+<!--                                    <button id="view_result_detail"-->
+<!--                                            style="padding: 5px 10px; color: white; background-color: #595A80; border: none; border-radius: 4px; cursor: pointer;">-->
+<!--                                        Result-->
+<!--                                    </button>-->
+                                </td>
+
+                            </tr>
+                        </t>
+                    </tbody>
+                </table>
+            </t>
+        </t>
+    </template>
+
+    <template id="view_detail_result">
+        <t t-call="portal.portal_layout">
+            <h1 class="page-header mt-4" style="text-align: center;">Score Board</h1>
+            <t t-if="not result_data">
+                <p>There are currently no Result for your account.</p>
+            </t>
+            <t t-if="result_data">
+                <table class="table table-bordered mt-4">
+                    <thead>
+                        <tr>
+                            <th style="text-align: center;">Question Name</th>
+                            <th style="text-align: center;">Answer</th>
+                            <th style="text-align: center;">Given answer</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <t t-foreach="result_data" t-as="line">
+                            <tr>
+                                <td style="text-align: center;"><t t-esc="line['question_name']"/></td>
+                                <td style="text-align: center;"><t t-esc="line['answer']"/></td>
+                                <td style="text-align: center;"><t t-esc="line['given_answer']"/></td>
+                            </tr>
+                        </t>
+                    </tbody>
+                </table>
+            </t>
+        </t>
+    </template>
+</odoo>

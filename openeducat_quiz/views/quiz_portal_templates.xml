@@ -1,0 +1,22 @@
+<odoo>
+    <template id="portal_online_exams" name="Quiz" inherit_id="portal.portal_my_home" customize_show="True" priority="30">
+        <div id="portal_client_category" position="before">
+            <div class="o_portal_category row g-2 mt-3" id="portal_openeducat_category">
+                <t t-call="portal.portal_docs_entry">
+                    <t t-set="icon" t-value="'/openeducat_quiz/static/description/quiz.svg'"/>
+                    <t t-set="title">Quiz</t>
+                    <t t-set="text">Add, remove or modify your addresses</t>
+                    <t t-set="url" t-value="'/online-exams'"/>
+                    <t t-set="config_card" t-value="True"/>
+                </t>
+                <t t-call="portal.portal_docs_entry">
+                    <t t-set="icon" t-value="'/openeducat_quiz/static/description/quiz-result.svg'"/>
+                    <t t-set="title">Result quiz</t>
+                    <t t-set="text">Configure your connection parameters</t>
+                    <t t-set="url" t-value="'/users/result-overview'"/>
+                    <t t-set="config_card" t-value="True"/>
+                </t>
+            </div>
+        </div>
+    </template>
+</odoo>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="op_c_q01" model="op.question.bank.line">
+            <field name="name">Which of the following statements should be used to obtain a remainder after dividing
+                3.14 by 2.1?
+            </field>
+            <field name="mark" type="float">1.0</field>
+            <field name="bank_id" ref="op_qu_bnk_c"/>
+        </record>
+
+        <record id="op_c_q01_a01" model="op.question.bank.answer">
+            <field name="name">rem = 3.14 % 2.1;</field>
+            <field name="grade_id" ref="op_ans_grd_100n"/>
+            <field name="question_id" ref="op_c_q01"/>
+        </record>
+
+        <record id="op_c_q01_a02" model="op.question.bank.answer">
+            <field name="name">rem = modf(3.14, 2.1);</field>
+            <field name="grade_id" ref="op_ans_grd_100n"/>
+            <field name="question_id" ref="op_c_q01"/>
+        </record>
+
+        <record id="op_c_q01_a03" model="op.question.bank.answer">
+            <field name="name">rem = fmod(3.14, 2.1);</field>
+            <field name="grade_id" ref="op_ans_grd_100p"/>
+            <field name="question_id" ref="op_c_q01"/>
+        </record>
+
+        <record id="op_c_q01_a04" model="op.question.bank.answer">
+            <field name="name">Remainder cannot be obtain in floating point division.</field>
+            <field name="grade_id" ref="op_ans_grd_100n"/>
+            <field name="question_id" ref="op_c_q01"/>
+        </record>
+
+        <record id="op_c_q02" model="op.question.bank.line">
+            <field name="name">Which of the following special symbol allowed in a variable name?</field>
+            <field name="mark" type="float">1.0</field>
+            <field name="bank_id" ref="op_qu_bnk_c"/>
+        </record>
+
+        <record id="op_c_q02_a01" model="op.question.bank.answer">
+            <field name="name">* (asterisk)</field>
+            <field name="grade_id" ref="op_ans_grd_100n"/>
+            <field name="question_id" ref="op_c_q02"/>
+        </record>
+
+        <record id="op_c_q02_a02" model="op.question.bank.answer">
+            <field name="name">| (pipeline)</field>
+            <field name="grade_id" ref="op_ans_grd_100n"/>
+            <field name="question_id" ref="op_c_q02"/>
+        </record>
+
+        <record id="op_c_q02_a03" model="op.question.bank.answer">
+            <field name="name">- (hyphen)</field>
+            <field name="grade_id" ref="op_ans_grd_100n"/>
+            <field name="question_id" ref="op_c_q02"/>
+        </record>
+
+        <record id="op_c_q02_a04" model="op.question.bank.answer">
+            <field name="name">_ (underscore)</field>
+            <field name="grade_id" ref="op_ans_grd_100p"/>
+            <field name="question_id" ref="op_c_q02"/>
+        </record>
+
+        <record id="op_c_q03" model="op.question.bank.line">
+            <field name="name">How would you round off a value from 1.66 to 2.0?</field>
+            <field name="mark" type="float">1.0</field>
+            <field name="bank_id" ref="op_qu_bnk_c"/>
+        </record>
+
+        <record id="op_c_q03_a01" model="op.question.bank.answer">
+            <field name="name">ceil(1.66)</field>
+            <field name="grade_id" ref="op_ans_grd_100p"/>
+            <field name="question_id" ref="op_c_q03"/>
+        </record>
+
+        <record id="op_c_q03_a02" model="op.question.bank.answer">
+            <field name="name">floor(1.66)</field>
+            <field name="grade_id" ref="op_ans_grd_100n"/>
+            <field name="question_id" ref="op_c_q03"/>
+        </record>
+
+        <record id="op_c_q03_a03" model="op.question.bank.answer">
+            <field name="name">roundup(1.66)</field>
+            <field name="grade_id" ref="op_ans_grd_100n"/>
+            <field name="question_id" ref="op_c_q03"/>
+        </record>
+
+        <record id="op_c_q03_a04" model="op.question.bank.answer">
+            <field name="name">roundto(1.66)</field>
+            <field name="grade_id" ref="op_ans_grd_100n"/>
+            <field name="question_id" ref="op_c_q03"/>
+        </record>
+
+        <record id="op_c_q04" model="op.question.bank.line">
+            <field name="name">By default a real number is treated as a</field>
+            <field name="mark" type="float">1.0</field>
+            <field name="bank_id" ref="op_qu_bnk_c"/>
+        </record>
+
+        <record id="op_c_q04_a01" model="op.question.bank.answer">
+            <field name="name">float</field>
+            <field name="grade_id" ref="op_ans_grd_100n"/>
+            <field name="question_id" ref="op_c_q04"/>
+        </record>
+
+        <record id="op_c_q04_a02" model="op.question.bank.answer">
+            <field name="name">double</field>
+            <field name="grade_id" ref="op_ans_grd_100p"/>
+            <field name="question_id" ref="op_c_q04"/>
+        </record>
+
+        <record id="op_c_q04_a03" model="op.question.bank.answer">
+            <field name="name">long double</field>
+            <field name="grade_id" ref="op_ans_grd_100n"/>
+            <field name="question_id" ref="op_c_q04"/>
+        </record>
+
+        <record id="op_c_q04_a04" model="op.question.bank.answer">
+            <field name="name">far double</field>
+            <field name="grade_id" ref="op_ans_grd_100n"/>
+            <field name="question_id" ref="op_c_q04"/>
+        </record>
+
+        <record id="op_c_q05" model="op.question.bank.line">
+            <field name="name">When we mention the prototype of a function?
+            </field>
+            <field name="mark" type="float">1.0</field>
+            <field name="bank_id" ref="op_qu_bnk_c"/>
+        </record>
+
+        <record id="op_c_q05_a01" model="op.question.bank.answer">
+            <field name="name">Defining</field>
+            <field name="grade_id" ref="op_ans_grd_100n"/>
+            <field name="question_id" ref="op_c_q05"/>
+        </record>
+
+        <record id="op_c_q05_a02" model="op.question.bank.answer">
+            <field name="name">Declaring</field>
+            <field name="grade_id" ref="op_ans_grd_100p"/>
+            <field name="question_id" ref="op_c_q05"/>
+        </record>
+
+        <record id="op_c_q05_a03" model="op.question.bank.answer">
+            <field name="name">Prototyping</field>
+            <field name="grade_id" ref="op_ans_grd_100n"/>
+            <field name="question_id" ref="op_c_q05"/>
+        </record>
+
+        <record id="op_c_q05_a04" model="op.question.bank.answer">
+            <field name="name">Calling</field>
+            <field name="grade_id" ref="op_ans_grd_100n"/>
+            <field name="question_id" ref="op_c_q05"/>
+        </record>
+
+        <record id="op_c_q06" model="op.question.bank.line">
+            <field name="name">A long double can be used if range of a double
+                is not enough to accommodate a real number.
+            </field>
+            <field name="mark" type="float">1.0</field>
+            <field name="bank_id" ref="op_qu_bnk_c"/>
+        </record>
+
+        <record id="op_c_q06_a01" model="op.question.bank.answer">
+            <field name="name">TRUE</field>
+            <field name="grade_id" ref="op_ans_grd_100p"/>
+            <field name="question_id" ref="op_c_q06"/>
+        </record>
+
+        <record id="op_c_q06_a02" model="op.question.bank.answer">
+            <field name="name">FALSE</field>
+            <field name="grade_id" ref="op_ans_grd_100n"/>
+            <field name="question_id" ref="op_c_q06"/>
+        </record>
+
+        <record id="op_c_q07" model="op.question.bank.line">
+            <field name="name">Size of short integer and long integer can be verified using the sizeof() operator.
+            </field>
+            <field name="mark" type="float">1.0</field>
+            <field name="bank_id" ref="op_qu_bnk_c"/>
+        </record>
+
+        <record id="op_c_q07_a01" model="op.question.bank.answer">
+            <field name="name">TRUE</field>
+            <field name="grade_id" ref="op_ans_grd_100p"/>
+            <field name="question_id" ref="op_c_q07"/>
+        </record>
+
+        <record id="op_c_q07_a02" model="op.question.bank.answer">
+            <field name="name">FALSE</field>
+            <field name="grade_id" ref="op_ans_grd_100n"/>
+            <field name="question_id" ref="op_c_q07"/>
+        </record>
+
+        <record id="op_c_q08" model="op.question.bank.line">
+            <field name="name">Which of the declaration is correct?</field>
+            <field name="mark" type="float">1.0</field>
+            <field name="bank_id" ref="op_qu_bnk_c"/>
+        </record>
+
+        <record id="op_c_q08_a01" model="op.question.bank.answer">
+            <field name="name">int length;</field>
+            <field name="grade_id" ref="op_ans_grd_100p"/>
+            <field name="question_id" ref="op_c_q08"/>
+        </record>
+
+        <record id="op_c_q08_a02" model="op.question.bank.answer">
+            <field name="name">char int;</field>
+            <field name="grade_id" ref="op_ans_grd_100n"/>
+            <field name="question_id" ref="op_c_q08"/>
+        </record>
+
+        <record id="op_c_q08_a03" model="op.question.bank.answer">
+            <field name="name">int long;</field>
+            <field name="grade_id" ref="op_ans_grd_100n"/>
+            <field name="question_id" ref="op_c_q08"/>
+        </record>
+
+        <record id="op_c_q08_a04" model="op.question.bank.answer">
+            <field name="name">float double;</field>
+            <field name="grade_id" ref="op_ans_grd_100n"/>
+            <field name="question_id" ref="op_c_q08"/>
+        </record>
+
+        <record id="op_c_q09" model="op.question.bank.line">
+            <field name="name">Which of the following correctly represents a long double constant?</field>
+            <field name="mark" type="float">1.0</field>
+            <field name="bank_id" ref="op_qu_bnk_c"/>
+        </record>
+
+        <record id="op_c_q09_a01" model="op.question.bank.answer">
+            <field name="name">6.68</field>
+            <field name="grade_id" ref="op_ans_grd_100n"/>
+            <field name="question_id" ref="op_c_q09"/>
+        </record>
+
+        <record id="op_c_q09_a02" model="op.question.bank.answer">
+            <field name="name">6.68L</field>
+            <field name="grade_id" ref="op_ans_grd_100p"/>
+            <field name="question_id" ref="op_c_q09"/>
+        </record>
+
+        <record id="op_c_q09_a03" model="op.question.bank.answer">
+            <field name="name">6.68f</field>
+            <field name="grade_id" ref="op_ans_grd_100n"/>
+            <field name="question_id" ref="op_c_q09"/>
+        </record>
+
+        <record id="op_c_q09_a04" model="op.question.bank.answer">
+            <field name="name">6.68LF</field>
+            <field name="grade_id" ref="op_ans_grd_100n"/>
+            <field name="question_id" ref="op_c_q09"/>
+        </record>
+
+        <record id="op_c_q10" model="op.question.bank.line">
+            <field name="name">What are the types of linkages?</field>
+            <field name="mark" type="float">1.0</field>
+            <field name="bank_id" ref="op_qu_bnk_c"/>
+        </record>
+
+        <record id="op_c_q10_a01" model="op.question.bank.answer">
+            <field name="name">Internal and External</field>
+            <field name="grade_id" ref="op_ans_grd_100n"/>
+            <field name="question_id" ref="op_c_q10"/>
+        </record>
+
+        <record id="op_c_q10_a02" model="op.question.bank.answer">
+            <field name="name">External, Internal and None</field>
+            <field name="grade_id" ref="op_ans_grd_100p"/>
+            <field name="question_id" ref="op_c_q10"/>
+        </record>
+
+        <record id="op_c_q10_a03" model="op.question.bank.answer">
+            <field name="name">External and None</field>
+            <field name="grade_id" ref="op_ans_grd_100n"/>
+            <field name="question_id" ref="op_c_q10"/>
+        </record>
+
+        <record id="op_c_q10_a04" model="op.question.bank.answer">
+            <field name="name">Internal</field>
+            <field name="grade_id" ref="op_ans_grd_100n"/>
+            <field name="question_id" ref="op_c_q10"/>
+        </record>
+    </data>
+</odoo>
