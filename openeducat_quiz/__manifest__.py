@@ -37,12 +37,12 @@
     ],
     'assets': {
         'web.assets_frontend': [
-            '/openeducat_quiz/static/src/scss/website_slides.scss',
-            '/openeducat_quiz/static/src/scss/quiz_timer.scss',
-            '/openeducat_quiz/static/src/js/website_quiz.js',
-            '/openeducat_quiz/static/src/js/quiz_timer.js',
-            '/openeducat_quiz/static/src/js/progress.js',
-            '/openeducat_quiz/static/src/js/page_online_exams.js',
+            '/pontusinc_quiz/static/src/scss/website_slides.scss',
+            '/pontusinc_quiz/static/src/scss/quiz_timer.scss',
+            '/pontusinc_quiz/static/src/js/website_quiz.js',
+            '/pontusinc_quiz/static/src/js/quiz_timer.js',
+            '/pontusinc_quiz/static/src/js/progress.js',
+            '/pontusinc_quiz/static/src/js/page_online_exams.js',
         ],
     },
     'demo': [
@@ -60,13 +60,13 @@
         'demo/op_quiz_line_data.xml',
     ],
     'images': [
-        'static/description/openeducat_quiz_banner.jpg',
+        'static/description/pontusinc_quiz_banner.jpg',
     ],
     'installable': True,
     'auto_install': False,
     'application': False,
-    'price': 100,
-    'currency': 'EUR',
+    'price': 169,
+    'currency': 'USD',
     'license': 'OPL-1',
     'live_test_url': 'https://www.openeducat.org/plans'
 }
